@@ -1,0 +1,6 @@
+[submodule "ThirdParty"]
+	path = ThirdParty
+	url = git://github.com/demonixis/YnaEngine-ThirdParty.git
+[submodule "Samples"]
+	path = Samples
+	url = git://github.com/demonixis/YnaEngine-Samples.git
