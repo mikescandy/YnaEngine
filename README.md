@@ -19,86 +19,70 @@ Do you want to see it working on another platform ? Fork it and send us a pull r
 ### Sample 2D
 
 ```C#
-using System;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Input;
-using Yna.Engine;
-using Yna.Engine.Graphics;
-using Yna.Engine.Input;
-
-namespace Yna.Samples.Screens
+public class AnimatedSprites : YnState2D
 {
-    public class AnimatedSprites : YnState2D
+	private YnEntity background;
+	private YnSprite playerSprite;
+
+	public AnimatedSprites(string name)
+		: base(name)
 	{
-        private YnSprite playerSprite;
+		// Background
+		background = new YnEntity("Scene/GreenGround");
+		Add(background);
 
-        public AnimatedSprites(string name)
-            : base(name)
-        {
-			// Background
-            YnEntity background = new YnEntity("Scene/GreenGround");
-            Add(background);
+		// Player
+		playerSprite = new YnSprite("Sprites/BRivera-malesoldier");
+		spriteGroup.Add(playerSprite);
+	}
 
-			// Player
-            playerSprite = new YnSprite("Sprites/BRivera-malesoldier");
-            spriteGroup.Add(playerSprite);
-        }
+	public override void Initialize()
+	{
+		base.Initialize();
+		background.SetFullscreen();
+		playerSprite.Position = new Vector2(350, 350);
+		playerSprite.ForceInsideScreen = true;
 
-        public override void Initialize()
-        {
-            base.Initialize();
+		// Add animations
+		playerSprite.PrepareAnimation(64, 64);
+		playerSprite.AddAnimation("up", 0, 8, 25, false);
+		playerSprite.AddAnimation("left", 9, 17, 25, false);
+		playerSprite.AddAnimation("down", 18, 26, 25, false);
+		playerSprite.AddAnimation("right", 27, 35, 25, false);
+	}
 
-            // The background size is the window size
-            background.SetFullscreen();
+	public override void Update(GameTime gameTime)
+	{
+		base.Update(gameTime);
 
-            // Here, sprites are already loaded 
-            playerSprite.Position = new Vector2(350, 350);
-
-            // Force the sprite to stay on the screen
-            playerSprite.ForceInsideScreen = true;
-
-			// Add animations
-			playerSprite.PrepareAnimation(64, 64);
-            playerSprite.AddAnimation("up", 0, 8, 25, false);
-            playerSprite.AddAnimation("left", 9, 17, 25, false);
-            playerSprite.AddAnimation("down", 18, 26, 25, false);
-            playerSprite.AddAnimation("right", 27, 35, 25, false);
-        }
-
-        public override void Update(GameTime gameTime)
-        {
-            base.Update(gameTime);
-
-            // Move the player
-            if (YnG.Keys.Up)
-			{
-                playerSprite.Y -= 2;
-				playerSprite.Play("up");
-			}
-            else if (YnG.Keys.Down)
-			{
-                playerSprite.Y += 2;
-				playerSprite.Play("down");
-			}
-			
-            if (YnG.Keys.Left)
-			{
-                playerSprite.X -= 2;
-				playerSprite.Play("left");
-            }
-			else if (YnG.Keys.Right)
-            {
-				playerSprite.X += 2;
-				playerSprite.Play("right");
-			}
-            
-			// Shake the screen
-            if (YnG.Keys.JustPressed(Keys.S))
-                Camera.Shake(15, 2500);
-        }
-    }
+		// Move the player
+		if (YnG.Keys.Up)
+		{
+			playerSprite.Y -= 2;
+			playerSprite.Play("up");
+		}
+		else if (YnG.Keys.Down)
+		{
+			playerSprite.Y += 2;
+			playerSprite.Play("down");
+		}
+		
+		if (YnG.Keys.Left)
+		{
+			playerSprite.X -= 2;
+			playerSprite.Play("left");
+		}
+		else if (YnG.Keys.Right)
+		{
+			playerSprite.X += 2;
+			playerSprite.Play("right");
+		}
+		
+		// Shake the screen
+		if (YnG.Keys.JustPressed(Keys.S))
+			Camera.Shake(15, 2500);
+	}
 }
-
 ```
 
 ### Contributors
@@ -107,6 +91,6 @@ Lead developer : Yannick Comte (@CYannick)
 Contributor : Alex Frêne (aka @Drakulo)
 Logo & graphics : Thomas Ruffier
 
-### Licence
+### License
 
 Microsoft public license. Take a look on LICENSE file for more informations
