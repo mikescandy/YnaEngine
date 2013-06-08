@@ -1,8 +1,7 @@
 ﻿using System;
 using Microsoft.Xna.Framework;
-using Yna.Engine.Graphics.TileMap.Isometric;
 
-namespace Yna.Engine
+namespace Yna.Engine.Graphics.TileMap.Isometric
 {
 	/// <summary>
 	/// Utility class for isometric transformations and ease

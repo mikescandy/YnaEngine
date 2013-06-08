@@ -1,17 +1,18 @@
 ﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using System.Resources;
 
 // Les informations générales relatives à un assembly dépendent de 
 // l'ensemble d'attributs suivant. Changez les valeurs de ces attributs pour modifier les informations
 // associées à un assembly.
-[assembly: AssemblyTitle("Speech Synthesis")]
-[assembly: AssemblyDescription("Speech Synthesis plugin for Yna Framework")]
+[assembly: AssemblyTitle("Yna.Graphics.TileMap")]
+[assembly: AssemblyDescription("Tilemap module for Yna Engine")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Yna Game Framework")]
-[assembly: AssemblyProduct("Yna Game Framework")]
-[assembly: AssemblyCopyright("Copyright ©  2012")]
-[assembly: AssemblyTrademark("Yna Game Framework")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("Yna Engine")]
+[assembly: AssemblyCopyright("Copyright © 2012 - 2013")]
+[assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 // L'affectation de la valeur false à ComVisible rend les types invisibles dans cet assembly 
@@ -20,7 +21,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Le GUID suivant est pour l'ID de la typelib si ce projet est exposé à COM
-[assembly: Guid("1cbc5fcb-0ced-4bc3-93c2-6273a5074683")]
+[assembly: Guid("f13d9c1c-f52e-494c-9d64-46e4ef1a0017")]
 
 // Les informations de version pour un assembly se composent des quatre valeurs suivantes :
 //
@@ -29,8 +30,8 @@ using System.Runtime.InteropServices;
 //      Numéro de build
 //      Révision
 //
-// Vous pouvez spécifier toutes les valeurs ou indiquer les numéros de build et de révision par défaut 
+// Vous pouvez spécifier toutes les valeurs ou indiquer les numéros de révision et de build par défaut 
 // en utilisant '*', comme indiqué ci-dessous :
-// [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: NeutralResourcesLanguageAttribute("fr-FR")]

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Speech.Synthesis;
 using System.Globalization;
 
-namespace Yna.Framework.Audio
+namespace Yna.Engine.Audio
 {
     public class SpeechSynthesis : IDisposable
     {

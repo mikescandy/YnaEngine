@@ -6,10 +6,10 @@ using System.Runtime.InteropServices;
 // les attributs suivants. Modifiez la valeur de ces attributs pour modifier les informations
 // associées à l’assembly.
 [assembly: AssemblyTitle("Yna.Input.Wiimote")]
-[assembly: AssemblyProduct("Yna.Input.Wiimote")]
-[assembly: AssemblyDescription("Wiimote plugin for Yna Framework")]
+[assembly: AssemblyProduct("Yna Engine")]
+[assembly: AssemblyDescription("Wiimote plugin for Yna Engine")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyCopyright("Copyright ©  2012")]
+[assembly: AssemblyCopyright("Copyright ©  2012 - 2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

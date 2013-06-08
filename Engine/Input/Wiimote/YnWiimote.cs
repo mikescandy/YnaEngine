@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using WiimoteLib;
 
-namespace Yna.Framework.Input
+namespace Yna.Engine.Input
 {
     /// <summary>
     /// A Wiimote/Nunchuk manager
@@ -118,7 +118,6 @@ namespace Yna.Framework.Input
                     _wiimote.SetReportType(InputReport.IRAccel, true);
                     _wiimote.SetLEDs(true, false, false, true);
                     IsAvailable = true;
-                    YnG.Wiimote = this;
                 }
                 catch (Exception ex)
                 {
@@ -145,7 +144,6 @@ namespace Yna.Framework.Input
                     _wiimote.Disconnect();
                     _wiimote.Dispose();
                     _wiimote = null;
-                    YnG.Wiimote = null;
                 }
                 catch (Exception ex)
                 {

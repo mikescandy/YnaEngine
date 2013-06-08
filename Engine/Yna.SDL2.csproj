@@ -146,7 +146,6 @@
     <Compile Include="Graphics\YnCollider.cs" />
     <Compile Include="Graphics\YnSprite.cs" />
     <Compile Include="Content\ContentHelper.cs" />
-    <Compile Include="Graphics\IsometricHelper.cs" />
     <Compile Include="ScreenHelper.cs" />
     <Compile Include="Input\Component\GamepadComponent.cs" />
     <Compile Include="Input\Component\KeyboardComponent.cs" />
@@ -179,15 +178,6 @@
     <Compile Include="Extensions\PointExtension.cs" />
     <Compile Include="State\StateManagerException.cs" />
     <Compile Include="Graphics3D\Terrain\Skybox.cs" />
-    <Compile Include="Graphics\Tilemap\BaseLayer.cs" />
-    <Compile Include="Graphics\Tilemap\BaseTile.cs" />
-    <Compile Include="Graphics\Tilemap\BaseTileMap.cs" />
-    <Compile Include="Graphics\Tilemap\Basic\Layer2D.cs" />
-    <Compile Include="Graphics\Tilemap\Basic\Tile2D.cs" />
-    <Compile Include="Graphics\Tilemap\Basic\TileMap2D.cs" />
-    <Compile Include="Graphics\Tilemap\Iso\LayerIso.cs" />
-    <Compile Include="Graphics\Tilemap\Iso\TileIso.cs" />
-    <Compile Include="Graphics\Tilemap\Iso\TileMapIso.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Graphics3D\Material\Resources\NormalMapEffect.ogl.mgfxo" />

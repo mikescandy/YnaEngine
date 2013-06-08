@@ -198,17 +198,7 @@
     <Compile Include="Graphics\Gui\Widgets\YnWindow.cs" />
     <Compile Include="Graphics\YnCollider.cs" />
     <Compile Include="Graphics\YnSprite.cs" />
-    <Compile Include="Graphics\TileMap\BaseLayer.cs" />
-    <Compile Include="Graphics\TileMap\BaseTile.cs" />
-    <Compile Include="Graphics\TileMap\BaseTileMap.cs" />
-    <Compile Include="Graphics\TileMap\Basic\Layer2D.cs" />
-    <Compile Include="Graphics\TileMap\Basic\Tile2D.cs" />
-    <Compile Include="Graphics\TileMap\Basic\TileMap2D.cs" />
-    <Compile Include="Graphics\TileMap\Iso\LayerIso.cs" />
-    <Compile Include="Graphics\TileMap\Iso\TileIso.cs" />
-    <Compile Include="Graphics\TileMap\Iso\TileMapIso.cs" />
     <Compile Include="Content\ContentHelper.cs" />
-    <Compile Include="Graphics\IsometricHelper.cs" />
     <Compile Include="ScreenHelper.cs" />
     <Compile Include="Input\Component\GamepadComponent.cs" />
     <Compile Include="Input\Component\KeyboardComponent.cs" />
@@ -238,7 +228,7 @@
     <Compile Include="YnTimer.cs" />
     <Compile Include="YnRandom.cs" />
     <Compile Include="Extensions\PointExtension.cs" />
-	<Compile Include="State\StateManagerException.cs" />
+    <Compile Include="State\StateManagerException.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MonoGame.Framework">
