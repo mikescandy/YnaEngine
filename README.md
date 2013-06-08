@@ -1,15 +1,13 @@
 Yna Engine
 ==========
 
-#### Current version 0.6dev
-
 ### What is Yna Engine ?
 
 Yna is a lightweight 2D and 3D game engine using MonoGame Framework (or XNA). The goal of this project is to give the developer the ability to create games in 2D or 3D easily on multiple platforms such as Windows Phone, Windows 8, or Linux. Yna is not a complex engine compared to its competitor and suitable for all developers who want an easy way to quickly create a prototype or a game.
 
-### Plateforms
+### Platforms
 
-Yna Engine is currently support many plateforms
+Yna Engine is currently support many platforms
 * Windows XP / Vista / 7 / 8 (Desktop)
 * Windows 8 & RT (Modern UI)
 * Linux
@@ -44,16 +42,6 @@ namespace Yna.Samples.Screens
 			// Player
             playerSprite = new YnSprite("Sprites/BRivera-malesoldier");
             spriteGroup.Add(playerSprite);
-			
-            // Objects
-            YnEntity woodObject = new YnEntity("Scene/Tree");
-            Add(woodObject);
-
-            YnEntity wood2Object = new YnEntity("Scene/Tree2");
-            Add(wood2Object);
-
-            YnEntity houseObject = new YnEntity("Scene/House");
-            Add(houseObject);
         }
 
         public override void Initialize()
@@ -107,8 +95,6 @@ namespace Yna.Samples.Screens
 			// Shake the screen
             if (YnG.Keys.JustPressed(Keys.S))
                 Camera.Shake(15, 2500);
-            
-            UpdateAnimations(playerSprite);
         }
     }
 }
@@ -123,4 +109,4 @@ Logo & graphics : Thomas Ruffier
 
 ### Licence
 
-Microsft public license. Take a look on LICENSE file for more informations
+Microsoft public license. Take a look on LICENSE file for more informations
