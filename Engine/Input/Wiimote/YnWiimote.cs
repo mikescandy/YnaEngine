@@ -97,9 +97,12 @@ namespace Yna.Engine.Input
         /// </summary>
         public bool Z { get; private set; }
 
+        /// <summary>
+        /// Construct an YnWiimote input
+        /// </summary>
         public YnWiimote()
         {
-            Initialize();
+     
         }
 
         /// <summary>
@@ -151,6 +154,16 @@ namespace Yna.Engine.Input
                     IsAvailable = false;
                 }
             }
+        }
+
+        /// <summary>
+        /// Enable or disable rumble.
+        /// </summary>
+        /// <param name="enabled">Sets to true for enable rumble.</param>
+        public void SetRumble(bool enabled)
+        {
+            if (IsAvailable)
+                _wiimote.SetRumble(enabled);
         }
 
         private void wiimote_WiimoteExtensionChanged(object sender, WiimoteExtensionChangedEventArgs e)
