@@ -165,10 +165,6 @@
     <Compile Include="Storage\BasicStorageDevice.cs" />
     <Compile Include="Storage\IStorageDevice.cs" />
     <Compile Include="Storage\StorageManager.cs" />
-    <Compile Include="Script\MoveScript.cs" />
-    <Compile Include="Script\BaseScriptNode.cs" />
-    <Compile Include="Script\ScriptAnimator.cs" />
-    <Compile Include="Script\WaitScript.cs" />
     <Compile Include="Graphics\YnState2D.cs" />
     <Compile Include="YnBasicEntity.cs" />
     <Compile Include="YnG.cs" />
@@ -191,8 +187,6 @@
     <Reference Include="System" />
     <Reference Include="System.XML" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Collision\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

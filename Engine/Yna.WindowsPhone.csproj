@@ -187,10 +187,6 @@
     <Compile Include="State\YnState.cs" />
     <Compile Include="Storage\IStorageDevice.cs" />
     <Compile Include="Storage\StorageManager.cs" />
-    <Compile Include="Script\MoveScript.cs" />
-    <Compile Include="Script\BaseScriptNode.cs" />
-    <Compile Include="Script\ScriptAnimator.cs" />
-    <Compile Include="Script\WaitScript.cs" />
     <Compile Include="Graphics\YnState2D.cs" />
     <Compile Include="YnBasicEntity.cs" />
     <Compile Include="YnG.cs" />

@@ -61,22 +61,8 @@ public class AnimatedSprites : YnState2D
 			playerSprite.Y -= 2;
 			playerSprite.Play("up");
 		}
-		else if (YnG.Keys.Down)
-		{
-			playerSprite.Y += 2;
-			playerSprite.Play("down");
-		}
 		
-		if (YnG.Keys.Left)
-		{
-			playerSprite.X -= 2;
-			playerSprite.Play("left");
-		}
-		else if (YnG.Keys.Right)
-		{
-			playerSprite.X += 2;
-			playerSprite.Play("right");
-		}
+		// Etc.
 		
 		// Shake the screen
 		if (YnG.Keys.JustPressed(Keys.S))
@@ -86,11 +72,9 @@ public class AnimatedSprites : YnState2D
 ```
 
 ### Contributors
-
 Lead developer : Yannick Comte (@CYannick)
 Contributor : Alex Frêne (aka @Drakulo)
 Logo & graphics : Thomas Ruffier
 
 ### License
-
 Microsoft public license. Take a look on LICENSE file for more informations
