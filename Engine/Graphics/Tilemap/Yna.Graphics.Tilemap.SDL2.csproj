@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Yna.Graphics.TileMap</RootNamespace>
-    <AssemblyName>Yna.Graphics.TileMap</AssemblyName>
+    <AssemblyName>Yna.Engine.Graphics.TileMap</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>

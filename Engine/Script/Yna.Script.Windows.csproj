@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\bin\Debug\</OutputPath>
+    <OutputPath>..\bin\Windows\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE;WindowsDX</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -25,7 +25,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\bin\Release\</OutputPath>
+    <OutputPath>..\bin\WindowsDX\Release\</OutputPath>
     <DefineConstants>TRACE;WindowsDX</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -43,7 +43,7 @@
     <Compile Include="WaitScript.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Yna.WindowsDX.csproj">
+    <ProjectReference Include="..\Yna.Windows.csproj">
       <Project>{bf58caf2-143a-420c-8c0e-11d438522c35}</Project>
       <Name>Yna.WindowsDX</Name>
     </ProjectReference>

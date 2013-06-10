@@ -10,9 +10,9 @@ Yna is a lightweight 2D and 3D game engine using MonoGame Framework (or XNA). Th
 Yna Engine is currently support many platforms
 * Windows XP / Vista / 7 / 8 (Desktop)
 * Windows 8 & RT (Modern UI)
+* Windows Phone 7 & 8
 * Linux
-* Windows Phone 7
-* Windows Phone 8
+* Mac OSX
 
 Do you want to see it working on another platform ? Fork it and send us a pull request.
 
@@ -72,9 +72,9 @@ public class AnimatedSprites : YnState2D
 ```
 
 ### Contributors
-Lead developer : Yannick Comte (@CYannick)
-Contributor : Alex Frêne (aka @Drakulo)
-Logo & graphics : Thomas Ruffier
+* Lead developer : Yannick Comte (@CYannick)
+* Contributor : Alex Frêne (aka @Drakulo)
+* Logo & graphics : Thomas Ruffier
 
 ### License
 Microsoft public license. Take a look on LICENSE file for more informations

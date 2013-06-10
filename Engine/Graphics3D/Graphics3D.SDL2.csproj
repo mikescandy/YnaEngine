@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{096A90DA-61A1-4917-BB8C-785335A4C102}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Yna.Engine.Graphics3D</RootNamespace>
+    <AssemblyName>Yna.Engine.Graphics3D</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\SDL2\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;MONOGAME;SDL2;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\SDL2\Release\</OutputPath>
+    <DefineConstants>TRACE;MONOGAME;SDL2;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>..\..\ThirdParty\MonoGame\SDL2\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Extension\BoundingFrustrumExtension.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Camera\CameraManager.cs" />
+    <Compile Include="Controls\FirstPersonVirtualPadControl.cs" />
+    <Compile Include="Geometry\CylinderGeometry.cs" />
+    <Compile Include="Geometry\PyramidGeometry.cs" />
+    <Compile Include="Geometry\SphereGeometry.cs" />
+    <Compile Include="Geometry\TorusGeometry.cs" />
+    <Compile Include="Lighting\BaseLight.cs" />
+    <Compile Include="Lighting\DirectionalLight.cs" />
+    <Compile Include="Lighting\SceneLight.cs" />
+    <Compile Include="Scene\SceneGraph.cs" />
+    <Compile Include="Scene\SceneNode.cs" />
+    <Compile Include="Terrain\Geometry\BaseTerrainGeometry.cs" />
+    <Compile Include="Terrain\Geometry\HeitmapGeometry.cs" />
+    <Compile Include="Terrain\Geometry\SimpleTerrainGeometry.cs" />
+    <Compile Include="Terrain\SkySphere.cs" />
+    <Compile Include="YnBillboard.cs" />
+    <Compile Include="YnEntity3DList.cs" />
+    <Compile Include="YnMesh.cs" />
+    <Compile Include="YnMeshGeometry.cs" />
+    <Compile Include="YnMeshModel.cs" />
+    <Compile Include="YnScene3D.cs" />
+    <Compile Include="YnTransform.cs" />
+    <Compile Include="Renderer\QuadRenderer.cs" />
+    <Compile Include="Terrain\SkyBox.cs" />
+    <Compile Include="Camera\BaseCamera.cs" />
+    <Compile Include="Camera\FixedCamera.cs" />
+    <Compile Include="Camera\ThirdPersonCamera.cs" />
+    <Compile Include="Camera\TopCamera.cs" />
+    <Compile Include="Controls\BaseControl.cs" />
+    <Compile Include="Controls\FirstPersonControl.cs" />
+    <Compile Include="Controls\KeyMapping.cs" />
+    <Compile Include="Controls\ThirdPersonControl.cs" />
+    <Compile Include="Material\DualTextureMaterial.cs" />
+    <Compile Include="Material\EnvironmentMapMaterial.cs" />
+    <Compile Include="Material\StockMaterial.cs" />
+    <Compile Include="Material\BaseMaterial.cs" />
+    <Compile Include="Material\BasicMaterial.cs" />
+    <Compile Include="Material\NormalMapMaterial.cs" />
+    <Compile Include="Geometry\IcoSphereShape.cs" />
+    <Compile Include="Geometry\PlaneGeometry.cs" />
+    <Compile Include="Geometry\BaseGeometry.cs" />
+    <Compile Include="Geometry\CubeGeometry.cs" />
+    <Compile Include="Renderer\BoundingBoxRenderer.cs" />
+    <Compile Include="Renderer\RayRenderer.cs" />
+    <Compile Include="Renderer\BoundingFrustrumRenderer.cs" />
+    <Compile Include="YnG3.cs" />
+    <Compile Include="YnGroup3D.cs" />
+    <Compile Include="YnEntity3D.cs" />
+    <Compile Include="Terrain\Heightmap.cs" />
+    <Compile Include="Terrain\BaseTerrain.cs" />
+    <Compile Include="Terrain\SimpleTerrain.cs" />
+    <Compile Include="Camera\FirstPersonCamera.cs" />
+    <Compile Include="YnState3D.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Yna.SDL2.csproj">
+      <Project>{bf58caf2-143a-420c-8c0e-11d438522c35}</Project>
+      <Name>Yna.SDL2</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
