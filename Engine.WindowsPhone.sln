@@ -7,7 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yna.Script.WindowsPhone", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yna.Graphics.TileMap.WindowsPhone", "Engine\Graphics\Tilemap\Yna.Graphics.TileMap.WindowsPhone.csproj", "{F13D9C1C-F52E-494C-9D64-46E4EF1A0017}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphics3D.WindowsPhone", "Engine\Graphics3D\Graphics3D.WindowsPhone.csproj", "{CB8E712E-362F-4465-866E-39444FA93973}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yna.Graphics3D.WindowsPhone", "Engine\Graphics3D\Yna.Graphics3D.WindowsPhone.csproj", "{CB8E712E-362F-4465-866E-39444FA93973}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yna.Graphics.GUI.WindowsPhone", "Engine\Graphics\GUI\Yna.Graphics.GUI.WindowsPhone.csproj", "{4DF5F09E-7FC5-4C7C-8850-80A2A85E672A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +61,16 @@ Global
 		{CB8E712E-362F-4465-866E-39444FA93973}.Release|Mixed Platforms.Build.0 = Release|Windows Phone
 		{CB8E712E-362F-4465-866E-39444FA93973}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
 		{CB8E712E-362F-4465-866E-39444FA93973}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{4DF5F09E-7FC5-4C7C-8850-80A2A85E672A}.Debug|Any CPU.ActiveCfg = Debug|Windows Phone
+		{4DF5F09E-7FC5-4C7C-8850-80A2A85E672A}.Debug|Mixed Platforms.ActiveCfg = Debug|Windows Phone
+		{4DF5F09E-7FC5-4C7C-8850-80A2A85E672A}.Debug|Mixed Platforms.Build.0 = Debug|Windows Phone
+		{4DF5F09E-7FC5-4C7C-8850-80A2A85E672A}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{4DF5F09E-7FC5-4C7C-8850-80A2A85E672A}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{4DF5F09E-7FC5-4C7C-8850-80A2A85E672A}.Release|Any CPU.ActiveCfg = Release|Windows Phone
+		{4DF5F09E-7FC5-4C7C-8850-80A2A85E672A}.Release|Mixed Platforms.ActiveCfg = Release|Windows Phone
+		{4DF5F09E-7FC5-4C7C-8850-80A2A85E672A}.Release|Mixed Platforms.Build.0 = Release|Windows Phone
+		{4DF5F09E-7FC5-4C7C-8850-80A2A85E672A}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{4DF5F09E-7FC5-4C7C-8850-80A2A85E672A}.Release|Windows Phone.Build.0 = Release|Windows Phone
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

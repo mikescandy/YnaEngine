@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Yna.Input.Wiimote")]
 [assembly: AssemblyProduct("Yna Engine")]
 [assembly: AssemblyDescription("Wiimote plugin for Yna Engine")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Yna Engine")]
 [assembly: AssemblyCopyright("Copyright ©  2012 - 2013")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyTrademark("Yna Engine")]
 [assembly: AssemblyCulture("")]
 
 // Si vous définissez ComVisible sur False, les types de cet assembly ne sont plus visibles 

@@ -114,6 +114,7 @@
     <Compile Include="Extensions\Texture2DExtension.cs" />
     <Compile Include="Extensions\Vector2Extension.cs" />
     <Compile Include="Extensions\ViewportExtension.cs" />
+    <Compile Include="Graphics\YnScene.cs" />
     <Compile Include="Storage\XnaStorageDevice.cs" />
     <Compile Include="YnBasicCollection.cs" />
     <Compile Include="YnGameEntityCollection.cs" />
@@ -125,8 +126,6 @@
     <Compile Include="Graphics\Particle\YnParticle.cs" />
     <Compile Include="Graphics\Event\MouseEntityEvents.cs" />
     <Compile Include="Graphics\Event\TouchEntityEvents.cs" />
-    <Compile Include="Graphics\Scene\YnScene.cs" />
-    <Compile Include="Graphics\Scene\YnSceneGui.cs" />
     <Compile Include="Graphics\YnCircle.cs" />
     <Compile Include="Graphics\Animation\IEffectAnimation.cs" />
     <Compile Include="Graphics\Animation\YnInterpolator.cs" />

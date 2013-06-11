@@ -6,12 +6,12 @@ using System.Runtime.InteropServices;
 // l'ensemble d'attributs suivant. Changez les valeurs de ces attributs pour modifier les informations
 // associées à un assembly.
 [assembly: AssemblyTitle("Yna.Engine.Graphics3D")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Engine 3D module for Yna Engine")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Yna Engine")]
 [assembly: AssemblyProduct("Yna.Engine.Graphics3D")]
-[assembly: AssemblyCopyright("Copyright ©  2013")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCopyright("Copyright ©  2012 - 2013")]
+[assembly: AssemblyTrademark("Yna Engine ")]
 [assembly: AssemblyCulture("")]
 
 // Les informations de version pour un assembly se composent des quatre valeurs suivantes :

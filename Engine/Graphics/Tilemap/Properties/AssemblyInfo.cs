@@ -9,10 +9,10 @@ using System.Resources;
 [assembly: AssemblyTitle("Yna.Graphics.TileMap")]
 [assembly: AssemblyDescription("Tilemap module for Yna Engine")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Yna Engine")]
 [assembly: AssemblyProduct("Yna Engine")]
 [assembly: AssemblyCopyright("Copyright © 2012 - 2013")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyTrademark("Yna Engine")]
 [assembly: AssemblyCulture("")]
 
 // L'affectation de la valeur false à ComVisible rend les types invisibles dans cet assembly 

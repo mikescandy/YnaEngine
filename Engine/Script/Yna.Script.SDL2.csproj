@@ -39,6 +39,7 @@
   <ItemGroup>
     <Compile Include="BaseScriptNode.cs" />
     <Compile Include="MoveScript.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ScriptAnimator.cs" />
     <Compile Include="WaitScript.cs" />
   </ItemGroup>
