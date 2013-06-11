@@ -147,10 +147,10 @@ namespace Yna.Engine.Graphics
             if (!_assetLoaded)
             {
                 OnContentLoadingStarted(EventArgs.Empty);
-              
+
                 base.LoadContent();
                 _scene.LoadContent();
-                
+
                 OnContentLoadingFinished(EventArgs.Empty);
 
                 _assetLoaded = true;
@@ -187,16 +187,16 @@ namespace Yna.Engine.Graphics
         public override void Draw(GameTime gameTime)
         {
             int nbMembers = _scene.Entities.Count;
-            
+
             if (nbMembers > 0)
             {
                 spriteBatch.Begin(
-                    _spriteBatchConfig.SpriteSortMode, 
-                    _spriteBatchConfig.BlendState, 
-                    _spriteBatchConfig.SamplerState, 
-                    _spriteBatchConfig.DepthStencilState, 
-                    _spriteBatchConfig.RasterizerState, 
-                    _spriteBatchConfig.Effect, 
+                    _spriteBatchConfig.SpriteSortMode,
+                    _spriteBatchConfig.BlendState,
+                    _spriteBatchConfig.SamplerState,
+                    _spriteBatchConfig.DepthStencilState,
+                    _spriteBatchConfig.RasterizerState,
+                    _spriteBatchConfig.Effect,
                     _camera.GetTransformMatrix());
                 _scene.Draw(gameTime, spriteBatch);
                 spriteBatch.End();
@@ -222,6 +222,17 @@ namespace Yna.Engine.Graphics
         /// <param name="entity">An entitiy</param>
         public void Add(YnEntity entity)
         {
+            if (AssetLoaded)
+            {
+                if (!entity.Created)
+                    entity.Create();
+
+                if (!entity.AssetLoaded)
+                    entity.LoadContent();
+
+                entity.Initialize();
+            }
+
             _scene.Add(entity);
         }
 

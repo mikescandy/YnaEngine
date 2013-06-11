@@ -295,10 +295,9 @@ namespace Yna.Engine.State
             if (_assetLoaded)
             {
                 state.Create();
-                state.LoadContent();    
+                state.LoadContent();
+                state.Initialize();
             }
-
-            state.Initialize();
 
             _states.Add(state);
             _statesDictionary.Add(state.Name, _states.IndexOf(state));
@@ -334,14 +333,14 @@ namespace Yna.Engine.State
         /// </summary>
         public void Clear()
         {
-			if (_states.Count > 0)
-			{
+            if (_states.Count > 0)
+            {
                 for (int i = _states.Count - 1; i >= 0; i--)
                     _states[i].Active = false;
 
                 _states.Clear();
                 _statesDictionary.Clear();
-			}
+            }
         }
 
         public IEnumerator GetEnumerator()
