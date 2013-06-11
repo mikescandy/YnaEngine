@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yna.Input.Wiimote", "Engine
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yna.Script.SDL2", "Engine\Script\Yna.Script.SDL2.csproj", "{6C26887B-3021-4AEF-89D7-E19F27DC4711}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yna.Graphics3D.SDL2", "Engine\Graphics3D\Yna.Graphics3D.SDL2.csproj", "{096A90DA-61A1-4917-BB8C-785335A4C102}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yna.Graphics.GUI.SDL2", "Engine\Graphics\GUI\Yna.Graphics.GUI.SDL2.csproj", "{F17AD2E9-7D54-48A4-8D56-DAC5846B9BFB}"
 EndProject
 Global
