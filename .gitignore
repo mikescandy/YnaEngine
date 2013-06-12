@@ -1,0 +1,17 @@
+Thumbs.db
+*.suo
+*.cachefile
+*.user
+*.v11
+*.pidb
+*.userprefs
+*.DS_Store
+*.directory
+ipch/
+obj/
+[Bb]in
+[Dd]ebug*/
+[Rr]elease*/
+Samples*/
+ThirdParty*/
+Engine*/

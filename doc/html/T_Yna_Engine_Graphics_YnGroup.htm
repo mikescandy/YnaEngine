@@ -1,0 +1,816 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+    <head>
+    	<title>YnGroup Class (Yna.Engine.Graphics)</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <link href="../css/sharpdoc.css" rel="stylesheet" type="text/css" />
+    <link href='../syntaxhighlighter/styles/shCoreDefault.css' rel='stylesheet' type='text/css' />         
+    <script src="../js/mootools.js" language="javascript"></script>
+    <script src="../js/mootools-more.js" language="javascript"></script>
+    <script src="../js/sharpdoc.js" language="javascript"></script>            
+    <script src="../syntaxhighlighter/js/shCore.js" type="text/javascript"></script>
+    <script src="../syntaxhighlighter/js/shBrushCpp.js" type="text/javascript"></script>
+    <script src="../syntaxhighlighter/js/shBrushCSharp.js" type="text/javascript"></script>
+    <script src="../syntaxhighlighter/js/shBrushJScript.js" type="text/javascript"></script>
+    <script src="../syntaxhighlighter/js/shBrushVb.js" type="text/javascript"></script>
+    <script type="text/javascript" language="javascript">
+        SyntaxHighlighter.defaults['gutter'] = false;
+        SyntaxHighlighter.defaults['smart-tabs'] = false
+        SyntaxHighlighter.all();
+    </script> 
+
+    </head>
+	<body>
+        <script type="text/javascript" language="javascript">
+         document.addEvent('domready', function () {
+             InstallCodeTabs();
+             SplitPane('toc_content', 'pane_toggle', 'pane_resizer');
+         });
+    </script>   
+     <div class="sharpdoc">
+        <table class="table_content">
+            <tbody>
+                <tr class="sharpdoc-header">
+                    <td colspan="3" class="cell">
+                        
+
+<h1 class="top-title">Documentation</h1>
+
+                    </td>                
+                </tr>
+                <tr>
+                <td id="pane_toc">
+                    <div id="toc_content" class="toc_content">
+                    <div class='toc top'><div class='icon'></div><a href="api.htm" >Class Library Reference</a><div style='clear: both'></div></div>
+<div class='toc child level0'><div class='icon'></div><a href="N_Yna_Engine_Graphics.htm" >Yna.Engine.Graphics Namespace</a><div style='clear: both'></div></div>
+<div class='toc child level1'><div class='icon'></div><a href="T_Yna_Engine_Graphics_ObjectOrigin.htm" >ObjectOrigin Enumeration</a><div style='clear: both'></div></div>
+<div class='toc child level1'><div class='icon'></div><a href="T_Yna_Engine_Graphics_PositionType.htm" >PositionType Enumeration</a><div style='clear: both'></div></div>
+<div class='toc child level1'><div class='icon'></div><a href="T_Yna_Engine_Graphics_YnCircle.htm" >YnCircle Class</a><div style='clear: both'></div></div>
+<div class='toc child level1'><div class='icon'></div><a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity Class</a><div style='clear: both'></div></div>
+<div class='toc child level1'><div class='icon'></div><a href="T_Yna_Engine_Graphics_YnEntityList.htm" >YnEntityList Class</a><div style='clear: both'></div></div>
+<div class='toc child level1'><div class='icon'></div><a href="T_Yna_Engine_Graphics_YnGraphics.htm" >YnGraphics Class</a><div style='clear: both'></div></div>
+<div class='toc child level1'><div class='icon'></div><strong>YnGroup Class</strong><div style='clear: both'></div></div>
+<div class='toc child level1'><div class='icon'></div><a href="T_Yna_Engine_Graphics_YnSceneCamera2D.htm" >YnSceneCamera2D Class</a><div style='clear: both'></div></div>
+<div class='toc child level1'><div class='icon'></div><a href="T_Yna_Engine_Graphics_YnSprite.htm" >YnSprite Class</a><div style='clear: both'></div></div>
+<div class='toc child level1'><div class='icon'></div><a href="T_Yna_Engine_Graphics_YnState2D.htm" >YnState2D Class</a><div style='clear: both'></div></div>
+<div class='toc child level1'><div class='icon'></div><a href="T_Yna_Engine_Graphics_YnText.htm" >YnText Class</a><div style='clear: both'></div></div>
+
+                    </div>
+                </td>
+                <td id="pane_resizer" class="pane_resizer">
+                    <div id="pane_toggle" class="collapse" ></div>
+                </td>
+                <td id="pane_content" class="pane_content">
+                    <div class="content">
+				        
+
+<div class="content-header"><strong>Last Update: </strong>Feb 2013</div>
+
+                        
+
+
+
+
+
+
+
+
+<div class="content-title">
+	<h1 id="#top" class="content-title">YnGroup Class (Yna.Engine.Graphics)</h1>
+</div>
+<div style="clear: both;"></div>
+        
+<div class="summary"><p>A container of scene object who work as a collection</p></div>
+
+    <script language="javascript">
+        window.addEvent('domready', function() {           
+            var section_partial_inheritance_slider = new Fx.Slide('section_partial_inheritance_content');
+            $('section_partial_inheritance_toggle').addEvent('click', function (event) {
+                $('section_partial_inheritance_icon').setProperty('class', {'true': 'toggle_icon in', 'false': 'toggle_icon out'}[section_partial_inheritance_slider.open]);
+                event.stop();
+                section_partial_inheritance_slider.toggle();
+            });
+        });
+    </script>        
+    <div id="section_partial_inheritance" class="section">
+        <div class="title"><a id="section_partial_inheritance_toggle" href="#" class="title"><div id="section_partial_inheritance_icon" class="toggle_icon out"></div><span class="title">Inheritance Hierarchy</span></a><div class="hr"><hr/></div></div>
+        <div id="section_partial_inheritance_content" class="block">
+        <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b"  target='_blank'>System.Object</a><br />&nbsp;&nbsp;&nbsp;<a href="T_Yna_Engine_YnBase.htm" >Yna.Engine.YnBase</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="T_Yna_Engine_Graphics_YnEntity.htm" >Yna.Engine.Graphics.YnEntity</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Yna.Engine.Graphics.YnGroup</strong><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="T_Yna_Engine_Graphics_Component_YnVirtualPad.htm" >Yna.Engine.Graphics.Component.YnVirtualPad</a><br />
+        </div>
+    </div>    
+<br/>
+<div class="origin">
+<strong>Assembly: </strong>Yna.Engine (Yna.Engine.dll 1.0.0.5)<br />
+<strong>Namespace: </strong><a href="N_Yna_Engine_Graphics.htm" >Yna.Engine.Graphics</a><br />
+
+</div>
+    <script language="javascript">
+        window.addEvent('domready', function() {           
+            var section_Syntax_slider = new Fx.Slide('section_Syntax_content');
+            $('section_Syntax_toggle').addEvent('click', function (event) {
+                $('section_Syntax_icon').setProperty('class', {'true': 'toggle_icon in', 'false': 'toggle_icon out'}[section_Syntax_slider.open]);
+                event.stop();
+                section_Syntax_slider.toggle();
+            });
+        });
+    </script>        
+    <div id="section_Syntax" class="section">
+        <div class="title"><a id="section_Syntax_toggle" href="#" class="title"><div id="section_Syntax_icon" class="toggle_icon out"></div><span class="title">Syntax</span></a><div class="hr"><hr/></div></div>
+        <div id="section_Syntax_content" class="block">
+            <div class="grouptab">
+	    <ul class="tabs"> 
+            <li class="code selected tab">C#</li> 
+    	    <li class="code tab">VB</li> 
+    	    <li class="code tab">C++</li> 
+    	    <li class="code tab">F#</li> 
+	    </ul>            
+        <div class="tabcontent selected">     
+        <pre class='brush: csharp;'>[DefaultMemberAttribute("Item")]
+public class YnGroup : YnEntity</pre>
+        </div>
+        <div class="tabcontent">     
+            <p>Syntax for VB is not yet implemented.</p>
+
+        </div>
+        <div class="tabcontent">     
+            <p>Syntax for C++ is not yet implemented</p>
+
+        </div>
+        <div class="tabcontent">     
+            <p>Syntax for F# is not yet implemented.</p>
+
+        </div>
+    </div>
+    <p>The YnGroup type exposes the following members.</p>
+
+        </div>
+    </div>    
+
+<div class="members">
+    <script language="javascript">
+        window.addEvent('domready', function() {           
+            var section_Constructors_slider = new Fx.Slide('section_Constructors_content');
+            $('section_Constructors_toggle').addEvent('click', function (event) {
+                $('section_Constructors_icon').setProperty('class', {'true': 'toggle_icon in', 'false': 'toggle_icon out'}[section_Constructors_slider.open]);
+                event.stop();
+                section_Constructors_slider.toggle();
+            });
+        });
+    </script>        
+    <div id="section_Constructors" class="section">
+        <div class="title"><a id="section_Constructors_toggle" href="#" class="title"><div id="section_Constructors_icon" class="toggle_icon out"></div><span class="title">Constructors</span></a><div class="hr"><hr/></div></div>
+        <div id="section_Constructors_content" class="block">
+            <div class="members">
+        <table class="members">
+        <tr>		<th class="icon-col">&nbsp;</th>
+	<th class="platicon-col">Platforms</th>
+    <th class="name-col">Name</th>
+    <th class="desc-col">Description</th>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Constructor"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_Graphics_YnGroup__ctor_2.htm" >YnGroup()</a></td>
+    <td class="desc-col">&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Constructor"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_Graphics_YnGroup__ctor_1.htm" >YnGroup(int)</a></td>
+    <td class="desc-col">&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Constructor"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_Graphics_YnGroup__ctor.htm" >YnGroup(int, int, int)</a></td>
+    <td class="desc-col">&nbsp;</td>
+</tr>
+        </table>
+        <a href="#top">Top</a>
+    </div>
+
+        </div>
+    </div>    
+    <script language="javascript">
+        window.addEvent('domready', function() {           
+            var section_Fields_slider = new Fx.Slide('section_Fields_content');
+            $('section_Fields_toggle').addEvent('click', function (event) {
+                $('section_Fields_icon').setProperty('class', {'true': 'toggle_icon in', 'false': 'toggle_icon out'}[section_Fields_slider.open]);
+                event.stop();
+                section_Fields_slider.toggle();
+            });
+        });
+    </script>        
+    <div id="section_Fields" class="section">
+        <div class="title"><a id="section_Fields_toggle" href="#" class="title"><div id="section_Fields_icon" class="toggle_icon out"></div><span class="title">Fields</span></a><div class="hr"><hr/></div></div>
+        <div id="section_Fields_content" class="block">
+            <div class="members">
+        <table class="members">
+        <tr>		<th class="icon-col">&nbsp;</th>
+	<th class="platicon-col">Platforms</th>
+    <th class="name-col">Name</th>
+    <th class="desc-col">Description</th>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon protfield" title="Protected Field"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="F_Yna_Engine_Graphics_YnGroup__entitiesList.htm" >_entitiesList</a></td>
+    <td class="desc-col">&nbsp;</td>
+</tr>
+        </table>
+        <a href="#top">Top</a>
+    </div>
+
+        </div>
+    </div>    
+    <script language="javascript">
+        window.addEvent('domready', function() {           
+            var section_Properties_slider = new Fx.Slide('section_Properties_content');
+            $('section_Properties_toggle').addEvent('click', function (event) {
+                $('section_Properties_icon').setProperty('class', {'true': 'toggle_icon in', 'false': 'toggle_icon out'}[section_Properties_slider.open]);
+                event.stop();
+                section_Properties_slider.toggle();
+            });
+        });
+    </script>        
+    <div id="section_Properties" class="section">
+        <div class="title"><a id="section_Properties_toggle" href="#" class="title"><div id="section_Properties_icon" class="toggle_icon out"></div><span class="title">Properties</span></a><div class="hr"><hr/></div></div>
+        <div id="section_Properties_content" class="block">
+            <div class="members">
+        <table class="members">
+        <tr>		<th class="icon-col">&nbsp;</th>
+	<th class="platicon-col">Platforms</th>
+    <th class="name-col">Name</th>
+    <th class="desc-col">Description</th>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_YnBase_Active.htm" >Active</a></td>
+    <td class="desc-col">Active or Desactive this object&nbsp;(Inherited from <a href="T_Yna_Engine_YnBase.htm" >YnBase</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_Graphics_YnEntity_Active.htm" >Active</a></td>
+    <td class="desc-col">Gets or sets the status of the object
+            If true the object is not paused and is visible
+            Else it's paused and not visible&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_Graphics_YnEntity_Alpha.htm" >Alpha</a></td>
+    <td class="desc-col">Gets or sets the Alpha applied to the object. Value between 0.0f and 1.0f&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_Graphics_YnEntity_AssetLoaded.htm" >AssetLoaded</a></td>
+    <td class="desc-col">Get the status of the texture2D
+            True if loaded&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_Graphics_YnEntity_AssetName.htm" >AssetName</a></td>
+    <td class="desc-col">Gets or sets the texture name used when the content is loaded&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_Graphics_YnGroup_AssetsLoaded.htm" >AssetsLoaded</a></td>
+    <td class="desc-col">Gets or sets the status of asset loading&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_Graphics_YnEntity_Color.htm" >Color</a></td>
+    <td class="desc-col">Gets or sets the color applied to the object&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_Graphics_YnGroup_Count.htm" >Count</a></td>
+    <td class="desc-col">The size of the collection&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_Graphics_YnEntity_Dirty.htm" >Dirty</a></td>
+    <td class="desc-col">Flags who determine if this object must be cleaned and removed&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_Graphics_YnEntity_Effects.htm" >Effects</a></td>
+    <td class="desc-col">Gets or sets the SpriteEffect used for drawing the sprite&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_YnBase_Enabled.htm" >Enabled</a></td>
+    <td class="desc-col">Pause or resume updates&nbsp;(Inherited from <a href="T_Yna_Engine_YnBase.htm" >YnBase</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_Graphics_YnEntity_Height.htm" >Height</a></td>
+    <td class="desc-col">Gets or sets the height of the rectangle
+            Note: who is the texture2D.Height value&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_YnBase_Id.htm" >Id</a></td>
+    <td class="desc-col">Get the unique identification code of this object&nbsp;(Inherited from <a href="T_Yna_Engine_YnBase.htm" >YnBase</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_Graphics_YnGroup_Initialized.htm" >Initialized</a></td>
+    <td class="desc-col">Gets or sets the status of initialization
+            True when all objects are initialized
+            False when initialization has not started yet&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_Graphics_YnGroup_Item.htm" >Item</a></td>
+    <td class="desc-col">Gets or sets an element at the specified position&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_Graphics_YnEntity_LayerDepth.htm" >LayerDepth</a></td>
+    <td class="desc-col">Gets or sets the layer depth&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_Graphics_YnGroup_Members.htm" >Members</a></td>
+    <td class="desc-col">Members of the group&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_YnBase_Name.htm" >Name</a></td>
+    <td class="desc-col">Get or Set the name of this object&nbsp;(Inherited from <a href="T_Yna_Engine_YnBase.htm" >YnBase</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_Graphics_YnEntity_Origin.htm" >Origin</a></td>
+    <td class="desc-col">Gets or sets the origin of the object. Default is Vector2.Zero&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_Graphics_YnEntity_Parent.htm" >Parent</a></td>
+    <td class="desc-col">Gets or sets the parent object of this object (null if don't have a parent)&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_Graphics_YnGroup_Position.htm" >Position</a></td>
+    <td class="desc-col">Gets or sets the position of the group and update all children
+            Note: The rectangle values are updated&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_Graphics_YnEntity_Position.htm" >Position</a></td>
+    <td class="desc-col">Gets or sets the position of the object
+            Note: The rectangle values are updated&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_Graphics_YnEntity_PositionType.htm" >PositionType</a></td>
+    <td class="desc-col">Gets or sets the positionment type for this object
+            Relative to its parent or absolute&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_Graphics_YnGroup_Rectangle.htm" >Rectangle</a></td>
+    <td class="desc-col">Gets or sets the Rectangle (Bounding box) of the group and update all children
+            Note: The position values are updated&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_Graphics_YnEntity_Rectangle.htm" >Rectangle</a></td>
+    <td class="desc-col">Gets or sets the Rectangle (Bounding box) of the object
+            Note: The position values are updated&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_Graphics_YnEntity_Rotation.htm" >Rotation</a></td>
+    <td class="desc-col">Gets or sets the rotation of the object (deg)&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_Graphics_YnEntity_Scale.htm" >Scale</a></td>
+    <td class="desc-col">Gets or sets the scale of the object.Default is Vector2.One
+            Note: The rectangle of the object is updated&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_Graphics_YnGroup_SecureCycle.htm" >SecureCycle</a></td>
+    <td class="desc-col">Enable of disable the secure cycle. If active, after each update a secure list is created with a copy of current element. 
+            This list is used for update and draw so you can change the value of the base members safely. If disable this is the base list who are used for
+            the cycle Update and Draw.&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_Graphics_YnEntity_Texture.htm" >Texture</a></td>
+    <td class="desc-col">Gets or sets the Texture2D used by the object&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_Graphics_YnEntity_Visible.htm" >Visible</a></td>
+    <td class="desc-col">Gets or sets the visibility status of the object&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_Graphics_YnEntity_Width.htm" >Width</a></td>
+    <td class="desc-col">Gets or sets the width of the rectangle
+            Note: who is the texture2D.Width value&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_Graphics_YnEntity_X.htm" >X</a></td>
+    <td class="desc-col">Gets or sets the X position of the object.
+            Note: The rectangle is updated when a value is setted&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_Graphics_YnEntity_Y.htm" >Y</a></td>
+    <td class="desc-col">Gets or sets the Y position of the object.
+            Note: The rectangle value is updated when a value is setted&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+        </table>
+        <a href="#top">Top</a>
+    </div>
+
+        </div>
+    </div>    
+    <script language="javascript">
+        window.addEvent('domready', function() {           
+            var section_Methods_slider = new Fx.Slide('section_Methods_content');
+            $('section_Methods_toggle').addEvent('click', function (event) {
+                $('section_Methods_icon').setProperty('class', {'true': 'toggle_icon in', 'false': 'toggle_icon out'}[section_Methods_slider.open]);
+                event.stop();
+                section_Methods_slider.toggle();
+            });
+        });
+    </script>        
+    <div id="section_Methods" class="section">
+        <div class="title"><a id="section_Methods_toggle" href="#" class="title"><div id="section_Methods_icon" class="toggle_icon out"></div><span class="title">Methods</span></a><div class="hr"><hr/></div></div>
+        <div id="section_Methods_content" class="block">
+            <div class="members">
+        <table class="members">
+        <tr>		<th class="icon-col">&nbsp;</th>
+	<th class="platicon-col">Platforms</th>
+    <th class="name-col">Name</th>
+    <th class="desc-col">Description</th>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_Graphics_YnGroup_Add.htm" >Add(YnEntity[])</a></td>
+    <td class="desc-col">Add a new entity in the group&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_Graphics_YnGroup_Add_1.htm" >Add(YnEntity)</a></td>
+    <td class="desc-col">Add a new object in the collecion&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_Graphics_YnGroup_Clear.htm" >Clear</a></td>
+    <td class="desc-col">Clear the collection&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_Graphics_YnEntity_Die.htm" >Die</a></td>
+    <td class="desc-col">Flag the object for a purge action&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_Graphics_YnGroup_Draw.htm" >Draw</a></td>
+    <td class="desc-col">Draw all members&nbsp;(Overrides <a href="M_Yna_Engine_Graphics_YnEntity_Draw.htm" >YnEntity.Draw()</a>)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_Graphics_YnGroup_GetChildByName.htm" >GetChildByName</a></td>
+    <td class="desc-col">&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_Graphics_YnGroup_GetEnumerator.htm" >GetEnumerator</a></td>
+    <td class="desc-col">&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_Graphics_YnGroup_Initialize.htm" >Initialize</a></td>
+    <td class="desc-col">Initialize all members&nbsp;(Overrides <a href="M_Yna_Engine_Graphics_YnEntity_Initialize.htm" >YnEntity.Initialize()</a>)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_Graphics_YnEntity_Kill.htm" >Kill</a></td>
+    <td class="desc-col">Kill the object, it's no more updated and drawed
+            Pause is setted on true and Visible is setted to false&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_Graphics_YnGroup_LoadContent.htm" >LoadContent()</a></td>
+    <td class="desc-col">Load content of all members&nbsp;(Overrides <a href="M_Yna_Engine_Graphics_YnEntity_LoadContent.htm" >YnEntity.LoadContent()</a>)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_Graphics_YnEntity_LoadContent_1.htm" >LoadContent(bool)</a></td>
+    <td class="desc-col">&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon protmethod" title="Protected Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_Graphics_YnEntity_NormalizePositionType_1.htm" >NormalizePositionType(Vector2)</a></td>
+    <td class="desc-col">Gets an adapted position relative to the position type of the sprite&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon protmethod" title="Protected Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_Graphics_YnEntity_NormalizePositionType.htm" >NormalizePositionType(Rectangle)</a></td>
+    <td class="desc-col">Gets an adapted position relative to the position type of the entity&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_Graphics_YnGroup_Remove.htm" >Remove</a></td>
+    <td class="desc-col">Remove an entity from the group&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_Graphics_YnEntity_Revive.htm" >Revive</a></td>
+    <td class="desc-col">Revive the object, it's updated and drawed
+            Pause is setted on false and Visible is setted to true&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_Graphics_YnEntity_SetFullScreen.htm" >SetFullScreen</a></td>
+    <td class="desc-col">Adapt the scale of the entity for taking fullscreen&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_Graphics_YnEntity_SetOriginTo.htm" >SetOriginTo</a></td>
+    <td class="desc-col">Change the origin of the object&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_Graphics_YnGroup_UnloadContent.htm" >UnloadContent</a></td>
+    <td class="desc-col">Unload content of all members&nbsp;(Overrides <a href="M_Yna_Engine_Graphics_YnEntity_UnloadContent.htm" >YnEntity.UnloadContent()</a>)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_Graphics_YnGroup_Update.htm" >Update</a></td>
+    <td class="desc-col">Update all members&nbsp;(Overrides <a href="M_Yna_Engine_Graphics_YnEntity_Update.htm" >YnEntity.Update()</a>)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_Graphics_YnGroup_UpdateRectangle.htm" >UpdateRectangle</a></td>
+    <td class="desc-col">Update the size of the group. It's the rectangle that contains all members&nbsp;</td>
+</tr>
+        </table>
+        <a href="#top">Top</a>
+    </div>
+
+        </div>
+    </div>    
+    <script language="javascript">
+        window.addEvent('domready', function() {           
+            var section_Events_slider = new Fx.Slide('section_Events_content');
+            $('section_Events_toggle').addEvent('click', function (event) {
+                $('section_Events_icon').setProperty('class', {'true': 'toggle_icon in', 'false': 'toggle_icon out'}[section_Events_slider.open]);
+                event.stop();
+                section_Events_slider.toggle();
+            });
+        });
+    </script>        
+    <div id="section_Events" class="section">
+        <div class="title"><a id="section_Events_toggle" href="#" class="title"><div id="section_Events_icon" class="toggle_icon out"></div><span class="title">Events</span></a><div class="hr"><hr/></div></div>
+        <div id="section_Events_content" class="block">
+            <div class="members">
+        <table class="members">
+        <tr>		<th class="icon-col">&nbsp;</th>
+	<th class="platicon-col">Platforms</th>
+    <th class="name-col">Name</th>
+    <th class="desc-col">Description</th>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubevent" title="Public Event"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="E_Yna_Engine_Graphics_YnEntity_Killed.htm" >Killed</a></td>
+    <td class="desc-col">Triggered when the object was killed&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubevent" title="Public Event"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="E_Yna_Engine_Graphics_YnEntity_MouseClick.htm" >MouseClick</a></td>
+    <td class="desc-col">Triggered when click are detected over the object&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubevent" title="Public Event"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="E_Yna_Engine_Graphics_YnEntity_MouseClicked.htm" >MouseClicked</a></td>
+    <td class="desc-col">Triggered when a click (and just one) is detected over the object&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubevent" title="Public Event"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="E_Yna_Engine_Graphics_YnEntity_MouseLeave.htm" >MouseLeave</a></td>
+    <td class="desc-col">Triggered when the mouse leave the object&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubevent" title="Public Event"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="E_Yna_Engine_Graphics_YnEntity_MouseOver.htm" >MouseOver</a></td>
+    <td class="desc-col">Triggered when the mouse is over the object&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubevent" title="Public Event"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="E_Yna_Engine_Graphics_YnEntity_MouseReleased.htm" >MouseReleased</a></td>
+    <td class="desc-col">Triggered when click are detected over the object&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubevent" title="Public Event"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="E_Yna_Engine_Graphics_YnEntity_Revived.htm" >Revived</a></td>
+    <td class="desc-col">Triggered when the object was revived&nbsp;(Inherited from <a href="T_Yna_Engine_Graphics_YnEntity.htm" >YnEntity</a>.)</td>
+</tr>
+        </table>
+        <a href="#top">Top</a>
+    </div>
+
+        </div>
+    </div>    
+
+	
+    <script language="javascript">
+        window.addEvent('domready', function() {           
+            var section_VersionandPlatformInformation_slider = new Fx.Slide('section_VersionandPlatformInformation_content');
+            $('section_VersionandPlatformInformation_toggle').addEvent('click', function (event) {
+                $('section_VersionandPlatformInformation_icon').setProperty('class', {'true': 'toggle_icon in', 'false': 'toggle_icon out'}[section_VersionandPlatformInformation_slider.open]);
+                event.stop();
+                section_VersionandPlatformInformation_slider.toggle();
+            });
+        });
+    </script>        
+    <div id="section_VersionandPlatformInformation" class="section">
+        <div class="title"><a id="section_VersionandPlatformInformation_toggle" href="#" class="title"><div id="section_VersionandPlatformInformation_icon" class="toggle_icon out"></div><span class="title">Version and Platform Information</span></a><div class="hr"><hr/></div></div>
+        <div id="section_VersionandPlatformInformation_content" class="block">
+        Supported in:</br></br>&nbsp;&nbsp;&nbsp;&nbsp;<div class="icon default" title="default"></div>&nbsp;default<br/>
+
+        </div>
+    </div>    
+
+
+    <script language="javascript">
+        window.addEvent('domready', function() {           
+            var section_SeeAlso_slider = new Fx.Slide('section_SeeAlso_content');
+            $('section_SeeAlso_toggle').addEvent('click', function (event) {
+                $('section_SeeAlso_icon').setProperty('class', {'true': 'toggle_icon in', 'false': 'toggle_icon out'}[section_SeeAlso_slider.open]);
+                event.stop();
+                section_SeeAlso_slider.toggle();
+            });
+        });
+    </script>        
+    <div id="section_SeeAlso" class="section">
+        <div class="title"><a id="section_SeeAlso_toggle" href="#" class="title"><div id="section_SeeAlso_icon" class="toggle_icon out"></div><span class="title">See Also</span></a><div class="hr"><hr/></div></div>
+        <div id="section_SeeAlso_content" class="block">
+        <h4 class='sdoc-subheading'>Reference</h4>
+<div class='seeAlsoStyle'>
+<a href="N_Yna_Engine_Graphics.htm" >Yna.Engine.Graphics Namespace (Yna.Engine)</a></div>
+<div class='seeAlsoStyle'>
+<a href="api.htm" >Class Library Reference</a></div>
+
+        </div>
+    </div>    
+
+</div>
+<!-- Temporary space -->
+<br />
+<br />
+<br />
+
+		                
+
+                    </div>
+                </td>
+                </tr>
+                <tr class="sharpdoc-footer">
+                    <td colspan="3" class="cell">
+                        
+<div style="float:left;"></div><div style="float:right;">Documentation generated by <a href="http://sharpdx.org/documentation/tools/sharpdoc" target="_blank">SharpDoc</a></div>
+<div style="clear: both;"></div>
+                    </td>                
+                </tr>
+            </tbody>
+        </table>
+     </div>
+
+	</body>
+</html>                                                                                

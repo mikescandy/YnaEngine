@@ -1,0 +1,24 @@
+body {
+	padding-top: 75px;
+}
+
+.demoPreview {
+	text-align: center;
+	margin: 10px 0 20px 0;
+}
+
+.hero-unit {
+	padding: 25px;
+	border-radius: 0;
+}
+
+.navbar-inner {
+
+}
+
+ul.nav li {
+	line-height: 40px;
+}
+ul.nav li a {
+	font-size: 22px;
+}

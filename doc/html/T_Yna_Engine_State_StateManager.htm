@@ -1,0 +1,577 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+    <head>
+    	<title>StateManager Class (Yna.Engine.State)</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <link href="../css/sharpdoc.css" rel="stylesheet" type="text/css" />
+    <link href='../syntaxhighlighter/styles/shCoreDefault.css' rel='stylesheet' type='text/css' />         
+    <script src="../js/mootools.js" language="javascript"></script>
+    <script src="../js/mootools-more.js" language="javascript"></script>
+    <script src="../js/sharpdoc.js" language="javascript"></script>            
+    <script src="../syntaxhighlighter/js/shCore.js" type="text/javascript"></script>
+    <script src="../syntaxhighlighter/js/shBrushCpp.js" type="text/javascript"></script>
+    <script src="../syntaxhighlighter/js/shBrushCSharp.js" type="text/javascript"></script>
+    <script src="../syntaxhighlighter/js/shBrushJScript.js" type="text/javascript"></script>
+    <script src="../syntaxhighlighter/js/shBrushVb.js" type="text/javascript"></script>
+    <script type="text/javascript" language="javascript">
+        SyntaxHighlighter.defaults['gutter'] = false;
+        SyntaxHighlighter.defaults['smart-tabs'] = false
+        SyntaxHighlighter.all();
+    </script> 
+
+    </head>
+	<body>
+        <script type="text/javascript" language="javascript">
+         document.addEvent('domready', function () {
+             InstallCodeTabs();
+             SplitPane('toc_content', 'pane_toggle', 'pane_resizer');
+         });
+    </script>   
+     <div class="sharpdoc">
+        <table class="table_content">
+            <tbody>
+                <tr class="sharpdoc-header">
+                    <td colspan="3" class="cell">
+                        
+
+<h1 class="top-title">Documentation</h1>
+
+                    </td>                
+                </tr>
+                <tr>
+                <td id="pane_toc">
+                    <div id="toc_content" class="toc_content">
+                    <div class='toc top'><div class='icon'></div><a href="api.htm" >Class Library Reference</a><div style='clear: both'></div></div>
+<div class='toc child level0'><div class='icon'></div><a href="N_Yna_Engine_State.htm" >Yna.Engine.State Namespace</a><div style='clear: both'></div></div>
+<div class='toc child level1'><div class='icon'></div><a href="T_Yna_Engine_State_BaseState.htm" >BaseState Class</a><div style='clear: both'></div></div>
+<div class='toc child level1'><div class='icon'></div><strong>StateManager Class</strong><div style='clear: both'></div></div>
+<div class='toc child level1'><div class='icon'></div><a href="T_Yna_Engine_State_YnStateList.htm" >YnStateList Class</a><div style='clear: both'></div></div>
+
+                    </div>
+                </td>
+                <td id="pane_resizer" class="pane_resizer">
+                    <div id="pane_toggle" class="collapse" ></div>
+                </td>
+                <td id="pane_content" class="pane_content">
+                    <div class="content">
+				        
+
+<div class="content-header"><strong>Last Update: </strong>Feb 2013</div>
+
+                        
+
+
+
+
+
+
+
+
+<div class="content-title">
+	<h1 id="#top" class="content-title">StateManager Class (Yna.Engine.State)</h1>
+</div>
+<div style="clear: both;"></div>
+        
+<div class="summary"><p>The StateManager is responsible off managing the various screens that composes the game.
+            A state represents a game screen as a menu, a scene or a score screen. 
+            The state manager can add, delete, and work with registered states.</p></div>
+
+    <script language="javascript">
+        window.addEvent('domready', function() {           
+            var section_partial_inheritance_slider = new Fx.Slide('section_partial_inheritance_content');
+            $('section_partial_inheritance_toggle').addEvent('click', function (event) {
+                $('section_partial_inheritance_icon').setProperty('class', {'true': 'toggle_icon in', 'false': 'toggle_icon out'}[section_partial_inheritance_slider.open]);
+                event.stop();
+                section_partial_inheritance_slider.toggle();
+            });
+        });
+    </script>        
+    <div id="section_partial_inheritance" class="section">
+        <div class="title"><a id="section_partial_inheritance_toggle" href="#" class="title"><div id="section_partial_inheritance_icon" class="toggle_icon out"></div><span class="title">Inheritance Hierarchy</span></a><div class="hr"><hr/></div></div>
+        <div id="section_partial_inheritance_content" class="block">
+        <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b"  target='_blank'>System.Object</a><br />&nbsp;&nbsp;&nbsp;Microsoft.Xna.Framework.GameComponent<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microsoft.Xna.Framework.DrawableGameComponent<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Yna.Engine.State.StateManager</strong><br/>
+        </div>
+    </div>    
+<br/>
+<div class="origin">
+<strong>Assembly: </strong>Yna.Engine (Yna.Engine.dll 1.0.0.5)<br />
+<strong>Namespace: </strong><a href="N_Yna_Engine_State.htm" >Yna.Engine.State</a><br />
+
+</div>
+    <script language="javascript">
+        window.addEvent('domready', function() {           
+            var section_Syntax_slider = new Fx.Slide('section_Syntax_content');
+            $('section_Syntax_toggle').addEvent('click', function (event) {
+                $('section_Syntax_icon').setProperty('class', {'true': 'toggle_icon in', 'false': 'toggle_icon out'}[section_Syntax_slider.open]);
+                event.stop();
+                section_Syntax_slider.toggle();
+            });
+        });
+    </script>        
+    <div id="section_Syntax" class="section">
+        <div class="title"><a id="section_Syntax_toggle" href="#" class="title"><div id="section_Syntax_icon" class="toggle_icon out"></div><span class="title">Syntax</span></a><div class="hr"><hr/></div></div>
+        <div id="section_Syntax_content" class="block">
+            <div class="grouptab">
+	    <ul class="tabs"> 
+            <li class="code selected tab">C#</li> 
+    	    <li class="code tab">VB</li> 
+    	    <li class="code tab">C++</li> 
+    	    <li class="code tab">F#</li> 
+	    </ul>            
+        <div class="tabcontent selected">     
+        <pre class='brush: csharp;'>[DefaultMemberAttribute("Item")]
+public class StateManager : DrawableGameComponent</pre>
+        </div>
+        <div class="tabcontent">     
+            <p>Syntax for VB is not yet implemented.</p>
+
+        </div>
+        <div class="tabcontent">     
+            <p>Syntax for C++ is not yet implemented</p>
+
+        </div>
+        <div class="tabcontent">     
+            <p>Syntax for F# is not yet implemented.</p>
+
+        </div>
+    </div>
+    <p>The StateManager type exposes the following members.</p>
+
+        </div>
+    </div>    
+
+<div class="members">
+    <script language="javascript">
+        window.addEvent('domready', function() {           
+            var section_Constructors_slider = new Fx.Slide('section_Constructors_content');
+            $('section_Constructors_toggle').addEvent('click', function (event) {
+                $('section_Constructors_icon').setProperty('class', {'true': 'toggle_icon in', 'false': 'toggle_icon out'}[section_Constructors_slider.open]);
+                event.stop();
+                section_Constructors_slider.toggle();
+            });
+        });
+    </script>        
+    <div id="section_Constructors" class="section">
+        <div class="title"><a id="section_Constructors_toggle" href="#" class="title"><div id="section_Constructors_icon" class="toggle_icon out"></div><span class="title">Constructors</span></a><div class="hr"><hr/></div></div>
+        <div id="section_Constructors_content" class="block">
+            <div class="members">
+        <table class="members">
+        <tr>		<th class="icon-col">&nbsp;</th>
+	<th class="platicon-col">Platforms</th>
+    <th class="name-col">Name</th>
+    <th class="desc-col">Description</th>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Constructor"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_State_StateManager__ctor.htm" >StateManager</a></td>
+    <td class="desc-col">&nbsp;</td>
+</tr>
+        </table>
+        <a href="#top">Top</a>
+    </div>
+
+        </div>
+    </div>    
+    <script language="javascript">
+        window.addEvent('domready', function() {           
+            var section_Properties_slider = new Fx.Slide('section_Properties_content');
+            $('section_Properties_toggle').addEvent('click', function (event) {
+                $('section_Properties_icon').setProperty('class', {'true': 'toggle_icon in', 'false': 'toggle_icon out'}[section_Properties_slider.open]);
+                event.stop();
+                section_Properties_slider.toggle();
+            });
+        });
+    </script>        
+    <div id="section_Properties" class="section">
+        <div class="title"><a id="section_Properties_toggle" href="#" class="title"><div id="section_Properties_icon" class="toggle_icon out"></div><span class="title">Properties</span></a><div class="hr"><hr/></div></div>
+        <div id="section_Properties_content" class="block">
+            <div class="members">
+        <table class="members">
+        <tr>		<th class="icon-col">&nbsp;</th>
+	<th class="platicon-col">Platforms</th>
+    <th class="name-col">Name</th>
+    <th class="desc-col">Description</th>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_State_StateManager_ClearColor.htm" >ClearColor</a></td>
+    <td class="desc-col">Get or Set the color used to clear the screen before each frame&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_State_StateManager_FirstActiveScreen.htm" >FirstActiveScreen</a></td>
+    <td class="desc-col">Get the first active screen&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_State_StateManager_Item.htm" >Item</a></td>
+    <td class="desc-col">Get the screen at index&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_State_StateManager_LastActiveScreen.htm" >LastActiveScreen</a></td>
+    <td class="desc-col">Get the last active screen&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubproperty" title="Public Property"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="P_Yna_Engine_State_StateManager_SpriteBatch.htm" >SpriteBatch</a></td>
+    <td class="desc-col">Get the SpriteBatch&nbsp;</td>
+</tr>
+        </table>
+        <a href="#top">Top</a>
+    </div>
+
+        </div>
+    </div>    
+    <script language="javascript">
+        window.addEvent('domready', function() {           
+            var section_Methods_slider = new Fx.Slide('section_Methods_content');
+            $('section_Methods_toggle').addEvent('click', function (event) {
+                $('section_Methods_icon').setProperty('class', {'true': 'toggle_icon in', 'false': 'toggle_icon out'}[section_Methods_slider.open]);
+                event.stop();
+                section_Methods_slider.toggle();
+            });
+        });
+    </script>        
+    <div id="section_Methods" class="section">
+        <div class="title"><a id="section_Methods_toggle" href="#" class="title"><div id="section_Methods_icon" class="toggle_icon out"></div><span class="title">Methods</span></a><div class="hr"><hr/></div></div>
+        <div id="section_Methods_content" class="block">
+            <div class="members">
+        <table class="members">
+        <tr>		<th class="icon-col">&nbsp;</th>
+	<th class="platicon-col">Platforms</th>
+    <th class="name-col">Name</th>
+    <th class="desc-col">Description</th>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_State_StateManager_Add.htm" >Add(BaseState, bool)</a></td>
+    <td class="desc-col">&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_State_StateManager_Add_1.htm" >Add(BaseState[])</a></td>
+    <td class="desc-col">&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_State_StateManager_Add_2.htm" >Add(BaseState)</a></td>
+    <td class="desc-col">Add a new screen to the Manager. The screen is not activate or desactivate, you must manage this yourself&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_State_StateManager_Add_3.htm" >Add(BaseState[], bool)</a></td>
+    <td class="desc-col">&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_State_StateManager_Clear.htm" >Clear()</a></td>
+    <td class="desc-col">Clear all the Screens in the Manager&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_State_StateManager_Clear_1.htm" >Clear(bool)</a></td>
+    <td class="desc-col">&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_State_StateManager_Draw.htm" >Draw</a></td>
+    <td class="desc-col">&nbsp;(Overrides DrawableGameComponent.Draw())</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_State_StateManager_GetActiveStatesIndex.htm" >GetActiveStatesIndex</a></td>
+    <td class="desc-col">Get index of actived screens&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_State_StateManager_GetDesactivedStatesIndex.htm" >GetDesactivedStatesIndex</a></td>
+    <td class="desc-col">Get desactivated states&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_State_StateManager_GetEnumerator.htm" >GetEnumerator</a></td>
+    <td class="desc-col">&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_State_StateManager_GetFirstActiveStatesIndex.htm" >GetFirstActiveStatesIndex</a></td>
+    <td class="desc-col">Get index of the first activated screen&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_State_StateManager_GetLastActiveStateIndex.htm" >GetLastActiveStateIndex</a></td>
+    <td class="desc-col">Get index of the last activated screen&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_State_StateManager_GetScreenAt.htm" >GetScreenAt</a></td>
+    <td class="desc-col">Get Screen at a position&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_State_StateManager_GetScreens.htm" >GetScreens</a></td>
+    <td class="desc-col">Get alls screens&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_State_StateManager_GetStateByName.htm" >GetStateByName</a></td>
+    <td class="desc-col">&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_State_StateManager_GetStateIndex.htm" >GetStateIndex(string)</a></td>
+    <td class="desc-col">Get the index of the screen&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_State_StateManager_GetStateIndex_1.htm" >GetStateIndex(BaseState)</a></td>
+    <td class="desc-col">Get the index of the screen&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon protmethod" title="Protected Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_State_StateManager_LoadContent.htm" >LoadContent</a></td>
+    <td class="desc-col">&nbsp;(Overrides DrawableGameComponent.LoadContent())</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon protmethod" title="Protected Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_State_StateManager_OnContentLoadDone.htm" >OnContentLoadDone</a></td>
+    <td class="desc-col">&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon protmethod" title="Protected Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_State_StateManager_OnContentLoadStarted.htm" >OnContentLoadStarted</a></td>
+    <td class="desc-col">&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_State_StateManager_PauseAllStates.htm" >PauseAllStates</a></td>
+    <td class="desc-col">&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_State_StateManager_Remove.htm" >Remove</a></td>
+    <td class="desc-col">Remove a screen to the Manager&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_State_StateManager_ReplaceState.htm" >ReplaceState</a></td>
+    <td class="desc-col">Replace a state by another state&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_State_StateManager_SetStateActive.htm" >SetStateActive(int, bool)</a></td>
+    <td class="desc-col">Active a screen and desactive other screens on demand&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_State_StateManager_SetStateActive_1.htm" >SetStateActive(string, bool)</a></td>
+    <td class="desc-col">&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_State_StateManager_SwitchState.htm" >SwitchState</a></td>
+    <td class="desc-col">Switch to a new state, just pass a new instance of a state and 
+            the StateManager will clear all other states and use the new state&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon protmethod" title="Protected Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_State_StateManager_UnloadContent.htm" >UnloadContent</a></td>
+    <td class="desc-col">&nbsp;(Overrides DrawableGameComponent.UnloadContent())</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubmethod" title="Public Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_State_StateManager_Update.htm" >Update</a></td>
+    <td class="desc-col">&nbsp;(Overrides GameComponent.Update())</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon protmethod" title="Protected Method"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="M_Yna_Engine_State_StateManager_UpdateDictionaryStates.htm" >UpdateDictionaryStates</a></td>
+    <td class="desc-col">&nbsp;</td>
+</tr>
+        </table>
+        <a href="#top">Top</a>
+    </div>
+
+        </div>
+    </div>    
+    <script language="javascript">
+        window.addEvent('domready', function() {           
+            var section_Events_slider = new Fx.Slide('section_Events_content');
+            $('section_Events_toggle').addEvent('click', function (event) {
+                $('section_Events_icon').setProperty('class', {'true': 'toggle_icon in', 'false': 'toggle_icon out'}[section_Events_slider.open]);
+                event.stop();
+                section_Events_slider.toggle();
+            });
+        });
+    </script>        
+    <div id="section_Events" class="section">
+        <div class="title"><a id="section_Events_toggle" href="#" class="title"><div id="section_Events_icon" class="toggle_icon out"></div><span class="title">Events</span></a><div class="hr"><hr/></div></div>
+        <div id="section_Events_content" class="block">
+            <div class="members">
+        <table class="members">
+        <tr>		<th class="icon-col">&nbsp;</th>
+	<th class="platicon-col">Platforms</th>
+    <th class="name-col">Name</th>
+    <th class="desc-col">Description</th>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubevent" title="Public Event"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="E_Yna_Engine_State_StateManager_LoadContentDone.htm" >LoadContentDone</a></td>
+    <td class="desc-col">&nbsp;</td>
+</tr>
+            <tr>        <td class="icon-col">        <div class="icon pubevent" title="Public Event"></div>
+</td>
+    <td class="platicon-col">        <div class="icon default" title="default"></div>
+</td>
+    <td class="name-col"><a href="E_Yna_Engine_State_StateManager_LoadContentStarted.htm" >LoadContentStarted</a></td>
+    <td class="desc-col">&nbsp;</td>
+</tr>
+        </table>
+        <a href="#top">Top</a>
+    </div>
+
+        </div>
+    </div>    
+
+	
+    <script language="javascript">
+        window.addEvent('domready', function() {           
+            var section_VersionandPlatformInformation_slider = new Fx.Slide('section_VersionandPlatformInformation_content');
+            $('section_VersionandPlatformInformation_toggle').addEvent('click', function (event) {
+                $('section_VersionandPlatformInformation_icon').setProperty('class', {'true': 'toggle_icon in', 'false': 'toggle_icon out'}[section_VersionandPlatformInformation_slider.open]);
+                event.stop();
+                section_VersionandPlatformInformation_slider.toggle();
+            });
+        });
+    </script>        
+    <div id="section_VersionandPlatformInformation" class="section">
+        <div class="title"><a id="section_VersionandPlatformInformation_toggle" href="#" class="title"><div id="section_VersionandPlatformInformation_icon" class="toggle_icon out"></div><span class="title">Version and Platform Information</span></a><div class="hr"><hr/></div></div>
+        <div id="section_VersionandPlatformInformation_content" class="block">
+        Supported in:</br></br>&nbsp;&nbsp;&nbsp;&nbsp;<div class="icon default" title="default"></div>&nbsp;default<br/>
+
+        </div>
+    </div>    
+
+
+    <script language="javascript">
+        window.addEvent('domready', function() {           
+            var section_SeeAlso_slider = new Fx.Slide('section_SeeAlso_content');
+            $('section_SeeAlso_toggle').addEvent('click', function (event) {
+                $('section_SeeAlso_icon').setProperty('class', {'true': 'toggle_icon in', 'false': 'toggle_icon out'}[section_SeeAlso_slider.open]);
+                event.stop();
+                section_SeeAlso_slider.toggle();
+            });
+        });
+    </script>        
+    <div id="section_SeeAlso" class="section">
+        <div class="title"><a id="section_SeeAlso_toggle" href="#" class="title"><div id="section_SeeAlso_icon" class="toggle_icon out"></div><span class="title">See Also</span></a><div class="hr"><hr/></div></div>
+        <div id="section_SeeAlso_content" class="block">
+        <h4 class='sdoc-subheading'>Reference</h4>
+<div class='seeAlsoStyle'>
+<a href="N_Yna_Engine_State.htm" >Yna.Engine.State Namespace (Yna.Engine)</a></div>
+<div class='seeAlsoStyle'>
+<a href="api.htm" >Class Library Reference</a></div>
+
+        </div>
+    </div>    
+
+</div>
+<!-- Temporary space -->
+<br />
+<br />
+<br />
+
+		                
+
+                    </div>
+                </td>
+                </tr>
+                <tr class="sharpdoc-footer">
+                    <td colspan="3" class="cell">
+                        
+<div style="float:left;"></div><div style="float:right;">Documentation generated by <a href="http://sharpdx.org/documentation/tools/sharpdoc" target="_blank">SharpDoc</a></div>
+<div style="clear: both;"></div>
+                    </td>                
+                </tr>
+            </tbody>
+        </table>
+     </div>
+
+	</body>
+</html>                                                                                
