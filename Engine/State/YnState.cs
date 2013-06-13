@@ -104,7 +104,7 @@ namespace Yna.Engine.State
         /// </summary>
         public virtual void Create()
         {
-
+            _created = true;
         }
 
         /// <summary>

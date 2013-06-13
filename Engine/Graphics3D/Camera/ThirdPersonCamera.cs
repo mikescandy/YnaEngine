@@ -57,7 +57,7 @@ namespace Yna.Engine.Graphics3D.Camera
         {
             _reference = reference;
             _followedObject = entity3D;
-
+            _isDynamic = true;
             SetupCamera();
         }
 

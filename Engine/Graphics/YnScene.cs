@@ -32,14 +32,22 @@ namespace Yna.Engine.Graphics.Scene
             _entities = new YnGameEntityCollection();
         }
 
+        public override void Create()
+        {
+            _entities.Create();
+            _created = true;
+        }
+
         public override void Initialize()
         {
             _entities.Initialize();
+            _initialized = true;
         }
 
         public override void LoadContent()
         {
             _entities.LoadContent();
+            _assetLoaded = true;
         }
 
         public override void UnloadContent()
@@ -47,6 +55,7 @@ namespace Yna.Engine.Graphics.Scene
             _baseList.Clear();
             _entities.UnloadContent();
             _entities.Clear();
+            _assetLoaded = false;
         }
 
         public override void Update(GameTime gameTime)

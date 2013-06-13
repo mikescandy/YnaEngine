@@ -95,6 +95,7 @@ namespace Yna.Engine.State
 
                 foreach (YnState screen in _states)
                 {
+                    screen.Create();
                     screen.LoadContent();
                     screen.Initialize();
                 }

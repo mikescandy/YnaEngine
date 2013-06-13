@@ -10,6 +10,7 @@ namespace Yna.Engine
     public abstract class YnGameEntity : YnBasicEntity
     {
         protected bool _assetLoaded;
+        protected bool _initialized;
         protected bool _visible;
 
         #region Properties
@@ -61,12 +62,20 @@ namespace Yna.Engine
         /// </summary>
         public event EventHandler<EventArgs> Desactivated = null;
 
+        /// <summary>
+        /// Method called when the entity is activated.
+        /// </summary>
+        /// <param name="e"></param>
         protected virtual void OnActivated(EventArgs e)
         {
             if (Activated != null)
                 Activated(this, e);
         }
 
+        /// <summary>
+        /// Method called when the entity is desactivated.
+        /// </summary>
+        /// <param name="e"></param>
         protected virtual void OnDesactivated(EventArgs e)
         {
             if (Desactivated != null)
@@ -75,10 +84,14 @@ namespace Yna.Engine
 
         #endregion
 
+        /// <summary>
+        /// Create game entity that is updateable and drawable.
+        /// </summary>
         public YnGameEntity()
             : base()
         {
             _assetLoaded = false;
+            _initialized = false;
             _enabled = true;
             _visible = true;
         }
@@ -88,7 +101,7 @@ namespace Yna.Engine
         /// </summary>
         public virtual void Initialize()
         {
-
+            _initialized = true;
         }
 
         /// <summary>
@@ -97,7 +110,7 @@ namespace Yna.Engine
         /// <param name="content">The content manager.</param>
         public virtual void LoadContent()
         {
-
+            _assetLoaded = true;
         }
 
         /// <summary>
@@ -105,7 +118,7 @@ namespace Yna.Engine
         /// </summary>
         public virtual void UnloadContent()
         {
-
+            _assetLoaded = false;
         }
 
         /// <summary>

@@ -723,7 +723,7 @@ namespace Yna.Engine.Graphics
         /// origin point.
         /// </summary>
         /// <param name="spriteOrigin">Determinated point of origin</param>
-        public void SetOriginTo(ObjectOrigin spriteOrigin)
+        public void SetOrigin(ObjectOrigin spriteOrigin)
         {
             switch (spriteOrigin)
             {

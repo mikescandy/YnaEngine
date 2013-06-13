@@ -16,6 +16,7 @@ namespace Yna.Engine.Graphics3D.Camera
             : base()
         {
             SetupCamera();
+            _isDynamic = true;
         }
 
         /// <summary>
