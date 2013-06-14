@@ -101,8 +101,7 @@
     <Compile Include="YnRandom.cs" />
     <Compile Include="Extensions\PointExtension.cs" />
     <Compile Include="State\StateManagerException.cs" />
-	
-	<Compile Include="Graphics3D\BoundingFrustrumExtension.cs" />
+    <Compile Include="Graphics3D\BoundingFrustrumExtension.cs" />
     <Compile Include="Graphics3D\Camera\CameraManager.cs" />
     <Compile Include="Graphics3D\Controls\FirstPersonVirtualPadControl.cs" />
     <Compile Include="Graphics3D\Geometry\CylinderGeometry.cs" />
@@ -130,10 +129,8 @@
     <Compile Include="Graphics3D\Camera\BaseCamera.cs" />
     <Compile Include="Graphics3D\Camera\FixedCamera.cs" />
     <Compile Include="Graphics3D\Camera\ThirdPersonCamera.cs" />
-    <Compile Include="Graphics3D\Camera\TopCamera.cs" />
     <Compile Include="Graphics3D\Controls\BaseControl.cs" />
     <Compile Include="Graphics3D\Controls\FirstPersonControl.cs" />
-    <Compile Include="Graphics3D\Controls\KeyMapping.cs" />
     <Compile Include="Graphics3D\Controls\ThirdPersonControl.cs" />
     <Compile Include="Graphics3D\Material\DualTextureMaterial.cs" />
     <Compile Include="Graphics3D\Material\EnvironmentMapMaterial.cs" />
@@ -156,6 +153,9 @@
     <Compile Include="Graphics3D\Terrain\SimpleTerrain.cs" />
     <Compile Include="Graphics3D\Camera\FirstPersonCamera.cs" />
     <Compile Include="Graphics3D\YnState3D.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Graphics3D\Material\Resources\NormalMapEffect.ogl.mgfxo" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MonoGame.Framework">

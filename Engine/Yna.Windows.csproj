@@ -157,6 +157,9 @@
     <Compile Include="Graphics3D\YnState3D.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Graphics3D\Material\Resources\NormalMapEffect.dx11.mgfxo" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="MonoGame.Framework">
       <HintPath>..\ThirdParty\MonoGame\WindowsDX\MonoGame.Framework.dll</HintPath>
     </Reference>

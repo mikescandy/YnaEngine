@@ -245,6 +245,9 @@
       <HintPath>..\ThirdParty\MonoGame\Windows8\MonoGame.Framework.dll</HintPath>
     </Reference>
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Graphics3D\Material\Resources\NormalMapEffect.dx11.mgfxo" />
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0' ">
     <VisualStudioVersion>11.0</VisualStudioVersion>
   </PropertyGroup>
