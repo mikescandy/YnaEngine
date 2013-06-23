@@ -101,7 +101,7 @@
     <Compile Include="YnRandom.cs" />
     <Compile Include="Extensions\PointExtension.cs" />
     <Compile Include="State\StateManagerException.cs" />
-    <Compile Include="Graphics3D\BoundingFrustrumExtension.cs" />
+    <Compile Include="Extensions\BoundingFrustrumExtension.cs" />
     <Compile Include="Graphics3D\Camera\CameraManager.cs" />
     <Compile Include="Graphics3D\Controls\FirstPersonVirtualPadControl.cs" />
     <Compile Include="Graphics3D\Geometry\CylinderGeometry.cs" />
@@ -111,8 +111,6 @@
     <Compile Include="Graphics3D\Lighting\BaseLight.cs" />
     <Compile Include="Graphics3D\Lighting\DirectionalLight.cs" />
     <Compile Include="Graphics3D\Lighting\SceneLight.cs" />
-    <Compile Include="Graphics3D\Scene\SceneGraph.cs" />
-    <Compile Include="Graphics3D\Scene\SceneNode.cs" />
     <Compile Include="Graphics3D\Terrain\Geometry\BaseTerrainGeometry.cs" />
     <Compile Include="Graphics3D\Terrain\Geometry\HeitmapGeometry.cs" />
     <Compile Include="Graphics3D\Terrain\Geometry\SimpleTerrainGeometry.cs" />

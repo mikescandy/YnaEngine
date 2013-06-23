@@ -38,6 +38,7 @@
     <Compile Include="Audio\AudioManager.cs" />
     <Compile Include="Audio\DummyAudioAdapter.cs" />
     <Compile Include="Audio\XnaAudioAdapter.cs" />
+    <Compile Include="Extensions\BoundingFrustrumExtension.cs" />
     <Compile Include="Graphics\ICollidable.cs" />
     <Compile Include="Content\IContentManager.cs" />
     <Compile Include="Extensions\BoundingBoxExtension.cs" />
@@ -103,7 +104,6 @@
     <Compile Include="YnTimer.cs" />
     <Compile Include="YnRandom.cs" />
     <Compile Include="Extensions\PointExtension.cs" />
-    <Compile Include="Graphics3D\BoundingFrustrumExtension.cs" />
     <Compile Include="Graphics3D\Camera\CameraManager.cs" />
     <Compile Include="Graphics3D\Controls\FirstPersonVirtualPadControl.cs" />
     <Compile Include="Graphics3D\Geometry\CylinderGeometry.cs" />
@@ -113,8 +113,6 @@
     <Compile Include="Graphics3D\Lighting\BaseLight.cs" />
     <Compile Include="Graphics3D\Lighting\DirectionalLight.cs" />
     <Compile Include="Graphics3D\Lighting\SceneLight.cs" />
-    <Compile Include="Graphics3D\Scene\SceneGraph.cs" />
-    <Compile Include="Graphics3D\Scene\SceneNode.cs" />
     <Compile Include="Graphics3D\Terrain\Geometry\BaseTerrainGeometry.cs" />
     <Compile Include="Graphics3D\Terrain\Geometry\HeitmapGeometry.cs" />
     <Compile Include="Graphics3D\Terrain\Geometry\SimpleTerrainGeometry.cs" />

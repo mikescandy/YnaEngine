@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿// YnaEngine - Copyright (C) YnaEngine team
+// This file is subject to the terms and conditions defined in
+// file 'LICENSE', which is part of this source code package.
+using System;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
-using Yna.Engine.Helpers;
 using Yna.Engine.Graphics.Event;
 
 namespace Yna.Engine.Graphics.Gui.Widgets

@@ -1,14 +1,11 @@
-﻿using Microsoft.Xna.Framework;
+﻿// YnaEngine - Copyright (C) YnaEngine team
+// This file is subject to the terms and conditions defined in
+// file 'LICENSE', which is part of this source code package.
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Media;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Xml;
 using System.Xml.Serialization;
 
 namespace Yna.Engine.Content

@@ -1,9 +1,11 @@
-﻿using System;
+﻿// YnaEngine - Copyright (C) YnaEngine team
+// This file is subject to the terms and conditions defined in
+// file 'LICENSE', which is part of this source code package.
+using System;
 using System.IO;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
-using Yna.Engine;
 
 namespace Yna.Engine.Content
 {
