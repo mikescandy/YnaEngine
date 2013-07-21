@@ -70,14 +70,19 @@ namespace Yna.Engine
         public static YnKeyboard Keys { get; set; }
 
         /// <summary>
+        /// Gets or Set the mouse states
+        /// </summary>
+        public static YnMouse Mouse { get; set; }
+
+        /// <summary>
         /// Gets or Set the Gamepad states
         /// </summary>
         public static YnGamepad Gamepad { get; set; }
 
         /// <summary>
-        /// Gets or Set the mouse states
+        /// Gets or Set the Touch states
         /// </summary>
-        public static YnMouse Mouse { get; set; }
+        public static YnTouch Touch { get; set; }
 
         public static bool ShowMouse
         {
@@ -85,10 +90,7 @@ namespace Yna.Engine
             set { Game.IsMouseVisible = value; }
         }
 
-        /// <summary>
-        /// Gets or Set the Touch states
-        /// </summary>
-        public static YnTouch Touch { get; set; }
+        
 
         #endregion
 
