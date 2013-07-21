@@ -147,17 +147,5 @@ namespace Yna.Engine.Graphics.Animation
             if (_currentAnimationName != String.Empty)
                 _animations[_currentAnimationName].Update(gameTime);
         }
-
-        /// <summary>
-        /// Check if the sprite must gets its first frame. (if it's stopped)
-        /// </summary>
-        /// <param name="lastDirection"></param>
-        /// <returns></returns>
-        public Rectangle? CheckForIDLEAnimation(Vector2 lastDirection)
-        {
-            if (_currentAnimationName != String.Empty && lastDirection == Vector2.Zero)
-                return _animations[_currentAnimationName].Rectangle[0];
-            return null;
-        }
     }
 }

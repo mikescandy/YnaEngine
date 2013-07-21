@@ -18,7 +18,6 @@ namespace Yna.Engine
         protected uint _id;
         protected string _name;
         protected bool _enabled;
-        protected bool _created;
 
         #endregion
 
@@ -60,15 +59,6 @@ namespace Yna.Engine
             set { _enabled = value; }
         }
 
-        /// <summary>
-        /// Object has been created or not.
-        /// </summary>
-        public bool Created
-        {
-            get { return _created; }
-            protected set { _created = value; }
-        }
-
         #endregion
 
         public YnBasicEntity()
@@ -76,15 +66,6 @@ namespace Yna.Engine
             _id = counterId++;
             _name = String.Format("YnBase_{0}", Id.ToString());
             _enabled = true;
-            _created = false;
-        }
-
-        /// <summary>
-        /// Create instances of the object after construction.
-        /// </summary>
-        public virtual void Create()
-        {
-            _created = true;
         }
 
         /// <summary>

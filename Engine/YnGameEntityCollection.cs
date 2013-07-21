@@ -12,15 +12,6 @@ namespace Yna.Engine
     public class YnGameEntityCollection : YnCollection<YnGameEntity>
     {
         /// <summary>
-        /// Create method called after constructor.
-        /// </summary>
-        public virtual void Create()
-        {
-            for (int i = 0, l = _members.Count; i < l; i++)
-                _members[i].Create();
-        }
-
-        /// <summary>
         /// Initialize logic.
         /// </summary>
         public virtual void Initialize()

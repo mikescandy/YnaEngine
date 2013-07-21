@@ -139,7 +139,8 @@ namespace Yna.Engine.Graphics
         public override void Initialize()
         {
             base.Initialize();
-            _scene.Initialize();
+            if (!_initialized)
+                _scene.Initialize();
         }
 
         /// <summary>
@@ -225,17 +226,12 @@ namespace Yna.Engine.Graphics
         /// <param name="entity">An entitiy</param>
         public void Add(YnEntity entity)
         {
-            if (AssetLoaded)
-            {
-                if (!entity.Created)
-                    entity.Create();
-
-                if (!entity.AssetLoaded)
-                    entity.LoadContent();
-
+            if (Initialized && !entity.Initialized)
                 entity.Initialize();
-            }
 
+            if (AssetLoaded && !entity.AssetLoaded)
+                    entity.LoadContent();
+       
             _scene.Add(entity);
         }
 
