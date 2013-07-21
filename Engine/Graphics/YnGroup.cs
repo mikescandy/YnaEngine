@@ -317,11 +317,11 @@ namespace Yna.Engine.Graphics
         {
             sceneObject.Parent = this;
 
-            if (_assetsLoaded)
-                sceneObject.LoadContent();
-
             if (_initialized)
                 sceneObject.Initialize();
+
+            if (_assetsLoaded)
+                sceneObject.LoadContent();
             
             UpdateRectangle();
 
