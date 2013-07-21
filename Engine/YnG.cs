@@ -180,21 +180,10 @@ namespace Yna.Engine
 
         #region StateManager
 
-        /// <summary>
-        /// Switch to a new state, just pass a new instance of a state and 
-        /// the StateManager will clear all other state and use your new state
-        /// </summary>
-        /// <param name="state">New state</param>
-        public static void SwitchState(YnState state)
-        {
-            if (StateManager != null)
-                StateManager.SwitchState(state);
-        }
-
         public static void SetStateActive(string name, bool desactiveOtherStates)
         {
             if (StateManager != null)
-                StateManager.SetStateActive(name, desactiveOtherStates);
+                StateManager.SetActive(name, desactiveOtherStates);
         }
 
         #endregion

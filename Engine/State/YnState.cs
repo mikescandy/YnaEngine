@@ -25,15 +25,6 @@ namespace Yna.Engine.State
         #region Properties
 
         /// <summary>
-        /// Sets to true for reinitialize the state after an activation.
-        /// </summary>
-        public bool ReinitializeAfterActivation
-        {
-            get { return _reinitializeAfterActivation; }
-            set { _reinitializeAfterActivation = value; }
-        }
-       
-        /// <summary>
         /// Gets or sets the Screen Manager
         /// </summary>
         public StateManager StateManager
@@ -102,12 +93,11 @@ namespace Yna.Engine.State
 
         #endregion
 
-        /// <summary>
-        /// First method called after constructor. You can instanciate your object here.
-        /// </summary>
-        public virtual void Create()
+        public override void Initialize()
         {
-            _created = true;
+            base.Initialize();
+            if (!_initialized)
+                _initialized = true;
         }
 
         /// <summary>
@@ -115,7 +105,12 @@ namespace Yna.Engine.State
         /// </summary>
         public override void LoadContent()
         {
-            spriteBatch = new SpriteBatch(stateManager.Game.GraphicsDevice);
+            if (!_assetLoaded)
+            {
+                spriteBatch = new SpriteBatch(stateManager.Game.GraphicsDevice);
+                _assetLoaded = true;
+
+            }
         }
 
         /// <summary>
@@ -123,7 +118,11 @@ namespace Yna.Engine.State
         /// </summary>
         public override void UnloadContent()
         {
-            spriteBatch.Dispose();
+            if (_assetLoaded)
+            {
+                spriteBatch.Dispose();
+                _assetLoaded = false;
+            }
         }
 
         /// <summary>

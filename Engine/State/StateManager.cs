@@ -21,6 +21,7 @@ namespace Yna.Engine.State
         private YnGameEntityCollection _states;
         private Dictionary<string, int> _statesDictionary;
 
+        private bool _initialized;
         private bool _assetLoaded;
         private SpriteBatch _spriteBatch;
         private Color _clearColor;
@@ -81,12 +82,26 @@ namespace Yna.Engine.State
             _states = new YnGameEntityCollection();
             _statesDictionary = new Dictionary<string, int>();
 
+            _initialized = false;
             _assetLoaded = false;
         }
 
         #endregion
 
         #region GameState pattern
+
+        public override void Initialize()
+        {
+            base.Initialize();
+
+            if (!_initialized)
+            {
+                foreach (YnState screen in _states)
+                    screen.Initialize();
+
+                _initialized = true;
+            }
+        }
 
         protected override void LoadContent()
         {
@@ -97,11 +112,7 @@ namespace Yna.Engine.State
                 _spriteBatch = new SpriteBatch(GraphicsDevice);
 
                 foreach (YnState screen in _states)
-                {
-                    screen.Create();
                     screen.LoadContent();
-                    screen.Initialize();
-                }
 
                 _assetLoaded = true;
             }
@@ -113,6 +124,8 @@ namespace Yna.Engine.State
             {
                 foreach (YnState screen in _states)
                     screen.UnloadContent();
+
+                _assetLoaded = false;
             }
         }
 
@@ -122,7 +135,8 @@ namespace Yna.Engine.State
         /// <param name="gameTime"></param>
         public override void Update(GameTime gameTime)
         {
-            _states.Update(gameTime);
+            if (Enabled)
+                _states.Update(gameTime);
         }
 
         /// <summary>
@@ -131,8 +145,11 @@ namespace Yna.Engine.State
         /// <param name="gameTime"></param>
         public override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(_clearColor);
-            _states.Draw(gameTime, _spriteBatch);
+            if (Visible)
+            {
+                GraphicsDevice.Clear(_clearColor);
+                _states.Draw(gameTime, _spriteBatch);
+            }
         }
 
         #endregion
@@ -179,10 +196,11 @@ namespace Yna.Engine.State
                 newState.StateManager = this;
                 _states[index] = newState;
 
-                if (!newState.AssetLoaded)
-                    newState.LoadContent();
+                if (_initialized && !newState.Initialized)
+                    newState.Initialize();
 
-                newState.Initialize();
+                if (_assetLoaded && !newState.AssetLoaded)
+                    newState.LoadContent();
 
                 return true;
             }
@@ -190,12 +208,13 @@ namespace Yna.Engine.State
             return false;
         }
 
+
         /// <summary>
-        /// Active a screen and desactive other screens on demand
+        /// Active a screen and desactive other screens if needed.
         /// </summary>
         /// <param name="index">Index of the screen in the collection</param>
         /// <param name="desactiveOtherStates">Desactive or not others screens</param>
-        public void SetStateActive(int index, bool desactiveOtherStates)
+        public void SetActive(int index, bool desactiveOtherStates)
         {
             int size = _states.Count;
 
@@ -214,7 +233,7 @@ namespace Yna.Engine.State
             }
         }
 
-        public void SetStateActive(string name, bool desactiveOtherScreens)
+        public void SetActive(string name, bool desactiveOtherScreens)
         {
             if (_statesDictionary.ContainsKey(name))
             {
@@ -272,18 +291,6 @@ namespace Yna.Engine.State
                 state.Active = false;
         }
 
-        /// <summary>
-        /// Switch to a new state, just pass a new instance of a state and 
-        /// the StateManager will clear all other states and use the new state
-        /// </summary>
-        /// <param name="state">New state</param>
-        /// <returns>True if the state manager has done the swith, false if it disabled</returns>
-        public void SwitchState(YnState nextState)
-        {
-            Clear();
-            Add(nextState);
-        }
-
         #endregion
 
         #region Collection methods
@@ -296,12 +303,11 @@ namespace Yna.Engine.State
         {
             state.StateManager = this;
 
-            if (_assetLoaded)
-            {
-                state.Create();
-                state.LoadContent();
+            if (_initialized)
                 state.Initialize();
-            }
+
+            if (_assetLoaded)
+                state.LoadContent();
 
             _states.Add(state);
             _statesDictionary.Add(state.Name, _states.IndexOf(state));

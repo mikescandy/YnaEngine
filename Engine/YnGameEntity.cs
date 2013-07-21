@@ -18,6 +18,12 @@ namespace Yna.Engine
 
         #region Properties
 
+        public bool Initialized
+        {
+            get { return _initialized; }
+            set { _initialized = value; }
+        }
+
         /// <summary>
         /// Gets or sets asset loaded. Sets to true to force LoadContent to reload an asset.
         /// </summary>
