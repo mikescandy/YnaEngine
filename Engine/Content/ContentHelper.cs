@@ -104,7 +104,7 @@ namespace Yna.Engine.Content
         public static SoundEffect LoadSoundEffect(string assetName)
         {
             SoundEffect sound = null;
-#if WINDOWS_PHONE_7 || XNA
+#if WINDOWS_PHONE_7 || XNA || MONOGAME 
             using (StreamReader reader = new StreamReader(GetContentDirectory() + assetName))
             {
                 sound = SoundEffect.FromStream(reader.BaseStream);

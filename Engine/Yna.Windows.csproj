@@ -40,7 +40,6 @@
     <Compile Include="Audio\XnaAudioAdapter.cs" />
     <Compile Include="Extensions\BoundingFrustrumExtension.cs" />
     <Compile Include="Graphics\ICollidable.cs" />
-    <Compile Include="Content\IContentManager.cs" />
     <Compile Include="Extensions\BoundingBoxExtension.cs" />
     <Compile Include="Extensions\BoundingSphereExtension.cs" />
     <Compile Include="Extensions\ModelExtension.cs" />
@@ -60,7 +59,6 @@
     <Compile Include="Graphics\Event\MouseEntityEvents.cs" />
     <Compile Include="Graphics\Event\TouchEntityEvents.cs" />
     <Compile Include="Graphics\YnCircle.cs" />
-    <Compile Include="Content\YnContentManager.cs" />
     <Compile Include="Graphics\Animation\IEffectAnimation.cs" />
     <Compile Include="Graphics\Animation\YnInterpolator.cs" />
     <Compile Include="Graphics\Event\VirtualPadEventArgs.cs" />

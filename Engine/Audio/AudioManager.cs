@@ -56,11 +56,7 @@ namespace Yna.Engine.Audio
 		/// </summary>
         public AudioManager()
         {
-#if WINDOWS_PHONE_8 || ANDROID
-            _audioAdapter = new DummyAudioAdapter();
-#else
 			_audioAdapter = new XnaAudioAdapter();
-#endif
             _audioAdapter.MusicEnabled = true;
             _audioAdapter.SoundEnabled = true;
             _audioAdapter.MusicVolume = 0.6f;
