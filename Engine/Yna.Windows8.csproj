@@ -107,7 +107,6 @@
     <Compile Include="Audio\XnaAudioAdapter.cs" />
     <Compile Include="Extensions\BoundingFrustrumExtension.cs" />
     <Compile Include="Graphics\ICollidable.cs" />
-    <Compile Include="Content\IContentManager.cs" />
     <Compile Include="Extensions\BoundingBoxExtension.cs" />
     <Compile Include="Extensions\BoundingSphereExtension.cs" />
     <Compile Include="Extensions\ModelExtension.cs" />
@@ -160,10 +159,6 @@
     <Compile Include="Graphics\YnCollider.cs" />
     <Compile Include="Graphics\YnSprite.cs" />
     <Compile Include="ScreenHelper.cs" />
-    <Compile Include="Input\Component\GamepadComponent.cs" />
-    <Compile Include="Input\Component\KeyboardComponent.cs" />
-    <Compile Include="Input\Component\MouseComponent.cs" />
-    <Compile Include="Input\Component\TouchComponent.cs" />
     <Compile Include="Input\YnGamepad.cs" />
     <Compile Include="Input\YnKeyboard.cs" />
     <Compile Include="Input\YnMouse.cs" />
