@@ -46,16 +46,8 @@
     <Reference Include="Microsoft.Xna.Framework.Graphics" />
     <Reference Include="Microsoft.Xna.Framework.GamerServices" />
     <Reference Include="Microsoft.Xna.Framework.Input.Touch" />
-    <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Xml" />
-    <Reference Include="System.Core">
-      <RequiredTargetFramework>4.0</RequiredTargetFramework>
-    </Reference>
-    <Reference Include="System.Xml.Linq">
-      <RequiredTargetFramework>4.0</RequiredTargetFramework>
-    </Reference>
-    <Reference Include="System.Net" />
     <Reference Include="System.Xml.Serialization, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
@@ -171,6 +163,37 @@
     <Compile Include="Graphics3D\Terrain\SimpleTerrain.cs" />
     <Compile Include="Graphics3D\Camera\FirstPersonCamera.cs" />
     <Compile Include="Graphics3D\YnState3D.cs" />
+    <Compile Include="Graphics\Tilemap\IsometricHelper.cs" />
+    <Compile Include="Graphics\Tilemap\BaseLayer.cs" />
+    <Compile Include="Graphics\Tilemap\BaseTile.cs" />
+    <Compile Include="Graphics\Tilemap\BaseTileMap.cs" />
+    <Compile Include="Graphics\Tilemap\Basic\Layer2D.cs" />
+    <Compile Include="Graphics\Tilemap\Basic\Tile2D.cs" />
+    <Compile Include="Graphics\Tilemap\Basic\TileMap2D.cs" />
+    <Compile Include="Graphics\Tilemap\Iso\LayerIso.cs" />
+    <Compile Include="Graphics\Tilemap\Iso\TileIso.cs" />
+    <Compile Include="Graphics\Tilemap\Iso\TileMapIso.cs" />
+    <Compile Include="Graphics\GUI\Widgets\YnCheckbox.cs" />
+    <Compile Include="Graphics\GUI\YnGui.cs" />
+    <Compile Include="Graphics\GUI\YnBorder.cs" />
+    <Compile Include="Graphics\GUI\Widgets\YnButton.cs" />
+    <Compile Include="Graphics\GUI\Widgets\YnLabel.cs" />
+    <Compile Include="Graphics\GUI\Widgets\YnMessageBox.cs" />
+    <Compile Include="Graphics\GUI\Widgets\YnPanel.cs" />
+    <Compile Include="Graphics\GUI\Widgets\YnProgressBar.cs" />
+    <Compile Include="Graphics\GUI\YnSceneGui.cs" />
+    <Compile Include="Graphics\GUI\YnSkin.cs" />
+    <Compile Include="Graphics\GUI\YnSkinGenerator.cs" />
+    <Compile Include="Graphics\GUI\YnWidgetList.cs" />
+    <Compile Include="Graphics\GUI\Widgets\YnSlider.cs" />
+    <Compile Include="Graphics\GUI\Widgets\YnTextButton.cs" />
+    <Compile Include="Graphics\GUI\Widgets\YnWidget.cs" />
+    <Compile Include="Graphics\GUI\Widgets\YnWindow.cs" />
+    <Compile Include="Graphics\GUI\YnWidgetProperties.cs" />
+    <Compile Include="Script\BaseScriptNode.cs" />
+    <Compile Include="Script\MoveScript.cs" />
+    <Compile Include="Script\ScriptAnimator.cs" />
+    <Compile Include="Script\WaitScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Graphics3D\Material\Resources\NormalMapEffect.dx11.mgfxo" />

@@ -1,6 +1,10 @@
 Yna Engine
 ==========
 
+### Status
+
+Yna is no more maintained, I'll work on another engine later, stay connected!
+
 ### What is Yna Engine ?
 
 Yna is a lightweight 2D and 3D game engine using MonoGame Framework (or XNA). The goal of this project is to give the developer the ability to create games in 2D or 3D easily on multiple platforms such as Windows Phone, Windows 8, or Linux. Yna is not a complex engine compared to its competitor and suitable for all developers who want an easy way to quickly create a prototype or a game.

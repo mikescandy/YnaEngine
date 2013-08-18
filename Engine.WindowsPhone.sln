@@ -3,12 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2012 for Windows Phone
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yna.WindowsPhone", "Engine\Yna.WindowsPhone.csproj", "{248413E0-47D0-44A3-BEDD-11E0200551C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yna.Script.WindowsPhone", "Engine\Script\Yna.Script.WindowsPhone.csproj", "{7F09655F-E2A7-46B0-ABEC-4A22EFC06547}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yna.Graphics.TileMap.WindowsPhone", "Engine\Graphics\Tilemap\Yna.Graphics.TileMap.WindowsPhone.csproj", "{F13D9C1C-F52E-494C-9D64-46E4EF1A0017}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yna.Graphics.GUI.WindowsPhone", "Engine\Graphics\GUI\Yna.Graphics.GUI.WindowsPhone.csproj", "{4DF5F09E-7FC5-4C7C-8850-80A2A85E672A}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
